@@ -217,7 +217,6 @@ function moveSlide(direction) {
 
 
 const galleryContainer = document.querySelector('.gallery-container');
-
 const gallery = document.querySelector('.gallery');
 const gallerySlides = Array.from(gallery.querySelectorAll('.a-div'));
 let currentIndex = 0;
@@ -233,19 +232,80 @@ const galleryLastClone = gallerySlides[galleryTotalSlides - 1].cloneNode(true);
 gallery.appendChild(galleryFirstClone);
 gallery.insertBefore(galleryLastClone, gallerySlides[0]);
 
-const updatedGallerySlides= Array.from(gallery.querySelectorAll('.a-div'));
+const updatedGallerySlides = Array.from(gallery.querySelectorAll('.a-div'));
+
+const dotsContainer = document.createElement('div');
+dotsContainer.classList.add('dots-container12');
+galleryContainer.appendChild(dotsContainer);
+
+for (let i = 0; i < galleryTotalSlides; i++) {
+    const dot = document.createElement('span');
+    dot.classList.add('dot');
+    dot.setAttribute('data-index', i);
+    dot.addEventListener('click', () => moveGalleryTo(i));
+    dotsContainer.appendChild(dot);
+}
+
+function updateDots() {
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
 
 function moveGallery(direction) {
-    const maxIndex = galleryTotalSlides-1;
+    const maxIndex = galleryTotalSlides - 1;
     currentIndex += direction;
     if (currentIndex < 0) {
         currentIndex = maxIndex;
     } else if (currentIndex > maxIndex) {
         currentIndex = 0;
     }
-    updatedGallerySlides.forEach(slide=>slide.style.transform = `translateX(-${(currentIndex * gallerySlideWidth) + slideGap*currentIndex}px)`)
-    // gallery.style.transform = `translateX(-${(currentIndex * gallerySlideWidth) + slideGap*currentIndex}px)`;
+    updatedGallerySlides.forEach(slide => slide.style.transform = `translateX(-${(currentIndex * gallerySlideWidth) + slideGap * currentIndex}px)`);
+    updateDots();
 }
+
+function moveGalleryTo(index) {
+    currentIndex = index;
+    updatedGallerySlides.forEach(slide => slide.style.transform = `translateX(-${(currentIndex * gallerySlideWidth) + slideGap * currentIndex}px)`);
+    updateDots();
+}
+
+updateDots();
+
+
+
+
+
+// const galleryContainer = document.querySelector('.gallery-container');
+
+// const gallery = document.querySelector('.gallery');
+// const gallerySlides = Array.from(gallery.querySelectorAll('.a-div'));
+// let currentIndex = 0;
+// const galleryTotalSlides = gallerySlides.length;
+// const visibleSlides = 3;
+// let slideGap = 35;
+// let gallerySlideWidth = gallerySlides[0].clientWidth;
+
+// galleryContainer.style.width = `${(gallerySlideWidth*visibleSlides)+(slideGap*(visibleSlides-1))}px`;
+
+// const galleryFirstClone = gallerySlides[0].cloneNode(true);
+// const galleryLastClone = gallerySlides[galleryTotalSlides - 1].cloneNode(true);
+// gallery.appendChild(galleryFirstClone);
+// gallery.insertBefore(galleryLastClone, gallerySlides[0]);
+
+// const updatedGallerySlides= Array.from(gallery.querySelectorAll('.a-div'));
+
+// function moveGallery(direction) {
+//     const maxIndex = galleryTotalSlides-1;
+//     currentIndex += direction;
+//     if (currentIndex < 0) {
+//         currentIndex = maxIndex;
+//     } else if (currentIndex > maxIndex) {
+//         currentIndex = 0;
+//     }
+//     updatedGallerySlides.forEach(slide=>slide.style.transform = `translateX(-${(currentIndex * gallerySlideWidth) + slideGap*currentIndex}px)`)
+//     // gallery.style.transform = `translateX(-${(currentIndex * gallerySlideWidth) + slideGap*currentIndex}px)`;
+// }
 
 
 // section8
