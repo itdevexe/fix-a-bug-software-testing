@@ -964,7 +964,6 @@ body {
 .accordion__header:before {
     content: "";
     position: absolute;
-    right: 1.5em;
     width: 2px;
     height: 0.75em;
     background-color: #000;
@@ -981,9 +980,7 @@ body {
 .accordion__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 60px;
     font-size: 14px;
 }
 .accordion:has(input:checked) {
