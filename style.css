@@ -1686,6 +1686,11 @@ img {
         gap: 10px;
         width: 100%;
     }
+
+    .checkbox{
+        display: none;
+    }
+
     .txt1{
         font-size: 2.5em;
     }
