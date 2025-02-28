@@ -1585,6 +1585,7 @@ img {
         overflow: hidden;
         display: block;
         height: 100px;
+        background-color: #f9f7ff;        ;
     }
     .cus-slider-container {
         height: 100px;
