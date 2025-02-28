@@ -8,6 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
         l && l.addEventListener("click", e);
     });
 }),
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const accordions = document.querySelectorAll('.accordion .checkbox');
+
+    accordions.forEach((accordion) => {
+        accordion.addEventListener('change', function () {
+            if (this.checked) {
+                accordions.forEach((otherAccordion) => {
+                    if (otherAccordion !== this) {
+                        otherAccordion.checked = false;
+                    }
+                });
+            }
+        });
+    });
+});
+
+
+
     document.addEventListener("DOMContentLoaded", function () {
         let e = document.getElementById("counter"),
             t = new IntersectionObserver(
@@ -280,3 +302,5 @@ ctaClickBtn.forEach((e) => {
             });
         });
     });
+
+
