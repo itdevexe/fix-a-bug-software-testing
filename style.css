@@ -1461,7 +1461,7 @@ img {
     justify-content: space-around;
     align-items: center;
     animation-name: slide-mobile;
-    animation-duration: 50s;
+    animation-duration: 26s;
 }
 .cus-slide img {
     height: 45px !important;
@@ -1584,6 +1584,10 @@ img {
         width: 100%;
         overflow: hidden;
         display: block;
+        height: 100px;
+    }
+    .cus-slider-container {
+        height: 100px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -1688,7 +1692,7 @@ img {
         width: 60px;
     }
     .color-grey {
-        margin-bottom: 64px;
+        margin-bottom: 54px;
     }
     .form-heading {
         font-size: 22px;
@@ -2036,7 +2040,10 @@ img {
         margin: 0 25px;
     }
     .cus-slide-mobile img {
-        width: 100px;
+        width: 140px;
+        max-height: 40px;
+        object-fit: contain;
+
     }
     .hero-form {
         display: flex;
