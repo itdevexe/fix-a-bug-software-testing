@@ -2445,55 +2445,74 @@
 <!-- jQuery Library (must be loaded first) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    let clickCount = 0;
-    let animationDone = false;
+    // Initialize click count and animation state
+let clickCount = 0;
+let animationDone = false;
+  
 
-    $(document).ready(function() {
-        $('#submit-btn').click(function() {
-            const emailField = $('#email');
-            const errorText = $('#error-text');
-            const thankYou = $('#thankYou');
-            const reg = /^[\w-.]+@(?!gmail\.com$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
-            
-            if (clickCount === 0 && !animationDone) {
-                // First click: animate form
-                emailField.css('display', 'block');
-                setTimeout(() => {
-                    emailField.css({ 'opacity': '1', 'transform': 'translateY(0)' });
-                }, 50);
+$(document).ready(function() {
+    $('#submit-btn').click(function() {
+        const emailField = $('#email');
+        const errorText = $('#error-text');
+        const thankYou = $('#thankYou');
+        
+        // Improved regex to block specific domains
+        const reg = /^[\w-.]+@(?!gmail\.com$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)([\w-]+\.)+[\w-]{2,}$/i;
+        
+        if (clickCount === 0 && !animationDone) {
+            // First click: animate form
+            emailField.css('display', 'block');
+            setTimeout(() => {
+                emailField.css({ 'opacity': '1', 'transform': 'translateY(0)' });
+            }, 50);
 
-                if (window.innerWidth <= 768) {
-                    $('#submit-btn').addClass('move-down');
-                } else {
-                    $('#submit-btn').addClass('move-right');
-                }
-                
-                animationDone = true;
-            } else if (clickCount >= 1) {
-                // On second click: validate email
-                const email = emailField.val();
-                if (reg.test(email)) {
-                    errorText.hide();
-                    thankYou.text('Thank you for submitting your email!').show();
-                } else {
-                    errorText.show();
-                    thankYou.hide();
-                }
+            if (window.innerWidth <= 768) {
+                $('#submit-btn').addClass('move-down');
+            } else {
+                $('#submit-btn').addClass('move-right');
             }
             
-            clickCount++;
-        });
-    });
-</script>
-
-<script>
-    document.getElementById("email-form-2").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
+            animationDone = true;
+        } else if (clickCount >= 1) {
+            // On second click: validate email
+            const email = emailField.val();
+            if (reg.test(email)) {
+                errorText.hide();
+                thankYou.text('Thank you for submitting your email!').show();
+            } else {
+                errorText.show();
+                errorText.text('Invalid or restricted email domain!');
+                thankYou.hide();
+            }
+        }
         
-        setTimeout(function() {
-            // document.getElementById("divpopup").style.display = "flex"; // Show the div after 4 seconds
-        }, 1000);
+        clickCount++;
     });
+});
+
+// Handle form submission
+const form = document.getElementById("email-form-2");
+form.addEventListener("submit", function(event) {
+    const emailField = document.getElementById("email");
+    const errorText = document.getElementById("error-text");
+    const email = emailField.value;
+    const reg = /^[\w-.]+@(?!gmail\.com$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)([\w-]+\.)+[\w-]{2,}$/i;
+
+    if (!reg.test(email)) {
+        event.preventDefault(); // Prevent form submission for restricted emails
+        errorText.style.display = "block";
+        errorText.innerText = "Invalid or restricted email domain!";
+    } else {
+        errorText.style.display = "none";
+    }
+});
+
+// Optional: Add a small delay for showing a popup or feedback
+setTimeout(function() {
+    // document.getElementById("divpopup").style.display = "flex";
+}, 1000);
+
+// Let me know if you want me to refine anything further! 🚀
 </script>
 
 
