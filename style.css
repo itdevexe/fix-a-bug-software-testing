@@ -2302,10 +2302,10 @@ img {
     overflow: hidden;
 }
 
-.youtube_mask {
+.mask {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    margin-bottom: 25px;
+    
 }
 
 .youtube-slide {

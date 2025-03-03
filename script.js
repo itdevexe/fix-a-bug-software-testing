@@ -335,7 +335,7 @@ ctaClickBtn.forEach((e) => {
 
 
     const sliderPlays = (e) => {
-        let mask = e.querySelector(".youtube_mask"),
+        let mask = e.querySelector(".mask"),
             navContainer = e.querySelector(".navigation_btns"),
             slides = Array.from(mask.querySelectorAll(".youtube-slide")),
             currentIndex = 0;
