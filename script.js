@@ -384,3 +384,18 @@ ctaClickBtn.forEach((e) => {
     document.addEventListener("DOMContentLoaded", () => {
         sliderPlays(document.querySelector(".youtube_slider"));
     });
+
+
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const navMenu = document.querySelector('.nav1');
+
+hamburgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    if (navMenu.classList.contains('active')) {
+        hamburgerIcon.innerHTML = '&times;'; // X icon
+    } else {
+        hamburgerIcon.innerHTML = '&#9776;'; // Hamburger icon
+    }
+});
