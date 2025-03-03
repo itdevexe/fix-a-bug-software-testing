@@ -1,13 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
     function e() {
-        let e = (window.innerWidth, 0);
-        window.scrollTo({ top: e, behavior: "smooth" }), document.getElementById("email").focus();
+        let e = 0;
+        window.scrollTo({ top: e, behavior: "smooth" });
+        
+        let submitBtn = document.getElementById("submit-btn");
+        if (submitBtn) {
+            submitBtn.click();
+        }
+
+        let emailInput = document.getElementById("email");
+        if (emailInput) {
+            emailInput.focus();
+        }
     }
+
     ["btn-1", "btn-2", "btn-3", "btn-4", "btn-5", "btn-6", "btn-7", "btn-8"].forEach((t) => {
         let l = document.getElementById(t);
-        l && l.addEventListener("click", e);
+        if (l) {
+            l.addEventListener("click", e);
+        }
     });
-}),
+});
 
 
 
@@ -238,44 +251,61 @@ const testing_accordion = document.getElementById("testing-accordion"),
             });
         });
     });
-const sliderPlay = (e, t) => {
-    let l = e.querySelector(".mask"),
-        n = e.querySelector(".navigation_btns"),
-        r = Array.from(l.querySelectorAll(".zoom_slide")),
-        o = 0,
-        s = Array.from(e.querySelectorAll(".zoom_slide"));
-    console.log(s.length);
-    let a = (e) => {
-        o = e;
-        let l = Array.from(n.querySelectorAll(".dot"));
-        l.forEach((e) => e.classList.remove("active")), l[e].classList.add("active");
-        let r = (18 * s[e].clientWidth) / 100;
-        s.forEach((l) => {
-            l.classList.remove("active"), t ? (l.style.transform = `translateX(calc( ${-100 * e}% - ${16 * e}px + ${r}px )) scaleY(0.9)`) : (l.style.transform = `translateX(calc( ${-100 * e}% - ${16 * e}px + ${r}px )) scaleY(1)`);
+
+
+    const sliderPlay = (e, t) => {
+        let l = e.querySelector(".mask"),
+            n = e.querySelector(".navigation_btns"),
+            r = Array.from(l.querySelectorAll(".zoom_slide")),
+            o = 0,
+            s = Array.from(e.querySelectorAll(".zoom_slide"));
+        console.log(s.length);
+        let a = (e) => {
+            o = e;
+            let l = Array.from(n.querySelectorAll(".dot"));
+            l.forEach((e) => e.classList.remove("active")), l[e].classList.add("active");
+            let r = (18 * s[e].clientWidth) / 100;
+            s.forEach((l) => {
+                l.classList.remove("active"),
+                t ? (l.style.transform = `translateX(calc( ${-100 * e}% - ${16 * e}px + ${r}px )) scaleY(0.9)`) 
+                  : (l.style.transform = `translateX(calc( ${-100 * e}% - ${16 * e}px + ${r}px )) scaleY(1)`);
+                l.style.transition = "transform 0.5s ease-in-out"; // Smooth transition added
+            }),
+                s[e].classList.add("active"),
+                (s[e].style.transform = `translateX(calc( ${-100 * e}% - ${16 * e}px + ${r}px )) scaleY(1)`);
+        };
+        r.forEach((e, t) => {
+            let l = document.createElement("div");
+            l.classList.add("dot"), !0 === e.classList.contains("active") && l.classList.add("active"), l.addEventListener("click", () => a(t)), n.appendChild(l);
+        });
+        let c = 0,
+            d = 0;
+        function u() {
+            d < c - 50 ? o < r.length - 1 && a(o + 1) : d > c + 50 && o > 0 && a(o - 1);
+        }
+        e.addEventListener("touchstart", function (e) {
+            c = e.touches[0].clientX;
         }),
-            s[e].classList.add("active"),
-            (s[e].style.transform = `translateX(calc( ${-100 * e}% - ${16 * e}px + ${r}px )) scaleY(1)`);
+            e.addEventListener("touchend", function (e) {
+                (d = e.changedTouches[0].clientX), u();
+            }),
+            a(o);
+        
+        // Auto-slide feature
+        setInterval(() => {
+            o = (o + 1) % r.length;
+            a(o);
+        }, 5000);
     };
-    r.forEach((e, t) => {
-        let l = document.createElement("div");
-        l.classList.add("dot"), !0 === e.classList.contains("active") && l.classList.add("active"), l.addEventListener("click", () => a(t)), n.appendChild(l);
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        sliderPlay(document.querySelector("#zoom_slider"), (zoom = !0)), sliderPlay(document.querySelector("#simpleSlider"), (zoom = !1)), sliderPlay(document.querySelector("#testimonialSlider"), (zoom = !1));
     });
-    let c = 0,
-        d = 0;
-    function u() {
-        d < c - 50 ? o < r.length - 1 && a(o + 1) : d > c + 50 && o > 0 && a(o - 1);
-    }
-    e.addEventListener("touchstart", function (e) {
-        c = e.touches[0].clientX;
-    }),
-        e.addEventListener("touchend", function (e) {
-            (d = e.changedTouches[0].clientX), u();
-        }),
-        a(o);
-};
-document.addEventListener("DOMContentLoaded", () => {
-    sliderPlay(document.querySelector("#zoom_slider"), (zoom = !0)), sliderPlay(document.querySelector("#simpleSlider"), (zoom = !1)), sliderPlay(document.querySelector("#testimonialSlider"), (zoom = !1));
-});
+    
+
+
+
+    
 const closePopupButton = document.getElementById("close-pop-up-btn");
 closePopupButton.addEventListener("click", () => {
     document.getElementById("divpopup").style.display = "none";
@@ -304,3 +334,53 @@ ctaClickBtn.forEach((e) => {
     });
 
 
+    const sliderPlays = (e) => {
+        let mask = e.querySelector(".mask"),
+            navContainer = e.querySelector(".navigation_btns"),
+            slides = Array.from(mask.querySelectorAll(".youtube-slide")),
+            currentIndex = 0;
+    
+        console.log(slides.length);
+    
+        let goToSlide = (index) => {
+            currentIndex = index;
+            let navDots = Array.from(navContainer.querySelectorAll(".dot"));
+            navDots.forEach((dot) => dot.classList.remove("active"));
+            navDots[index].classList.add("active");
+    
+            let translateValue = -100 * index;
+            mask.style.transform = `translateX(${translateValue}%)`;
+            mask.style.transition = "transform 0.5s ease-in-out";
+        };
+    
+        slides.forEach((slide, index) => {
+            let dot = document.createElement("div");
+            dot.classList.add("dot");
+            if (index === 0) dot.classList.add("active");
+            dot.addEventListener("click", () => goToSlide(index));
+            navContainer.appendChild(dot);
+        });
+    
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            goToSlide(currentIndex);
+        }
+    
+        let startX = 0, endX = 0;
+    
+        e.addEventListener("touchstart", (event) => {
+            startX = event.touches[0].clientX;
+        });
+    
+        e.addEventListener("touchend", (event) => {
+            endX = event.changedTouches[0].clientX;
+            if (endX < startX - 50) nextSlide();
+            else if (endX > startX + 50) goToSlide((currentIndex - 1 + slides.length) % slides.length);
+        });
+    
+        setInterval(nextSlide, 5000);
+    };
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        sliderPlays(document.querySelector(".youtube_slider"));
+    });
