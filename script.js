@@ -1,3 +1,10 @@
+
+document.getElementById('close-pop-up-btn').addEventListener('click', function() {
+    document.getElementById('divpopup').style.display = 'none';
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     function e() {
         let e = 0;

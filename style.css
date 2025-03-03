@@ -1605,6 +1605,12 @@ img {
     align-items: center;
     margin-top: 30px;
 }
+@media only screen and (max-width: 600px) {
+    #thankYou {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
 @keyframes slide {
     from {
         left: 0;
