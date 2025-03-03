@@ -42,7 +42,7 @@
                         <a href="#why-us">Why us?</a>
                         <a href="#case_studies">Case studies</a>
                         <a href="#testimonials">Testimonials</a>
-                        <div>
+                        <div class="cta">
                             <button class="btn2 cta-click" id="btn-1">Talk to an Expert</button>
                         </div>
                     </nav>
@@ -2277,7 +2277,7 @@
                             <div class="testmoin1">
                                 <div class="testmoin2">
                                     <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
-                                    <img src="image/ceo.webp" class="img93 no-desktop" alt="">
+                                    <img src="./software-testing/image/ceo.webp" class="img93 no-desktop" alt="">
                                     <p class="h3slider">Tomi Schütz,<span> CTO</span> </p>
                                     
                                     <p class="paratestmoin">Moolya helped in preventing bugs going into a major release</p>
@@ -2297,7 +2297,7 @@
                             <div class="testmoin1">
                                 <div class="testmoin2">
                                     <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
-                                    <img src="image/Co-Founder & CTO.webp" class="img93 no-desktop" alt="">
+                                    <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93 no-desktop" alt="">
                                     <p class="h3slider">Rahul Chari, <span>Co-Founder & CTO</span> </p>
                                     
                                     <p class="paratestmoin">Moolya is a partner to my entrepreneurial journey for over a decade</p>
@@ -2318,7 +2318,7 @@
                             <div class="testmoin1">
                                 <div class="testmoin2">
                                     <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
-                                    <img src="image/program director.webp" class="img93 no-desktop" alt="">
+                                    <img src="./software-testing/image/program director.webp" class="img93 no-desktop" alt="">
                                     <p class="h3slider">Huib Schoots,<span> Program Director</span> </p>
                                     
                                     <p class="paratestmoin">Moolya brought in CDT approach to Testing and made a large banking transformation go smooth</p>
@@ -2338,7 +2338,7 @@
                             <div class="testmoin1">
                                 <div class="testmoin2">
                                     <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
-                                    <img src="image/Head of Engineering & Technology.webp" class="img93 no-desktop" alt="">
+                                    <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93 no-desktop" alt="">
                                     <p class="h3slider">Natarajan Alagappan (Nattu),<span> ‍Head of Engineering & Technology</span> </p>
                                     
                                     <p class="paratestmoin">Moolya helped prevent bugs slipping into our users by bringing in a unique value</p>
@@ -2444,6 +2444,47 @@
 
 <!-- jQuery Library (must be loaded first) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let clickCount = 0;
+    let animationDone = false;
+
+    $(document).ready(function() {
+        $('#submit-btn').click(function() {
+            const emailField = $('#email');
+            const errorText = $('#error-text');
+            const thankYou = $('#thankYou');
+            const reg = /^[\w-.]+@(?!gmail\.com$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
+            
+            if (clickCount === 0 && !animationDone) {
+                // First click: animate form
+                emailField.css('display', 'block');
+                setTimeout(() => {
+                    emailField.css({ 'opacity': '1', 'transform': 'translateY(0)' });
+                }, 50);
+
+                if (window.innerWidth <= 768) {
+                    $('#submit-btn').addClass('move-down');
+                } else {
+                    $('#submit-btn').addClass('move-right');
+                }
+                
+                animationDone = true;
+            } else if (clickCount >= 1) {
+                // On second click: validate email
+                const email = emailField.val();
+                if (reg.test(email)) {
+                    errorText.hide();
+                    thankYou.text('Thank you for submitting your email!').show();
+                } else {
+                    errorText.show();
+                    thankYou.hide();
+                }
+            }
+            
+            clickCount++;
+        });
+    });
+</script>
 
 <script>
     document.getElementById("email-form-2").addEventListener("submit", function(event) {
@@ -2603,49 +2644,6 @@ $(document).ready(function() {
   }
 </style>
 
-
-
-<script>
-    let clickCount = 0;
-    let animationDone = false;
-
-    $(document).ready(function() {
-        $('#submit-btn').click(function() {
-            const emailField = $('#email');
-            const errorText = $('#error-text');
-            const thankYou = $('#thankYou');
-            const reg = /^[\w-.]+@(?!gmail\.com$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
-            
-            if (clickCount === 0 && !animationDone) {
-                // First click: animate form
-                emailField.css('display', 'block');
-                setTimeout(() => {
-                    emailField.css({ 'opacity': '1', 'transform': 'translateY(0)' });
-                }, 50);
-
-                if (window.innerWidth <= 768) {
-                    $('#submit-btn').addClass('move-down');
-                } else {
-                    $('#submit-btn').addClass('move-right');
-                }
-                
-                animationDone = true;
-            } else if (clickCount >= 1) {
-                // On second click: validate email
-                const email = emailField.val();
-                if (reg.test(email)) {
-                    errorText.hide();
-                    thankYou.text('Thank you for submitting your email!').show();
-                } else {
-                    errorText.show();
-                    thankYou.hide();
-                }
-            }
-            
-            clickCount++;
-        });
-    });
-</script>
 
 
 <!-- Start of HubSpot Embed Code -->
