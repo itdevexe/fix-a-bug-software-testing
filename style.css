@@ -35,7 +35,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter';
     overflow-x: hidden;
 }
 #testing-accordion,
@@ -138,7 +138,7 @@ body {
 }
 .size52px {
     font-size: 52px;
-    font-family: Arial;
+    font-family: 'Inter';
     font-weight: 900;
     margin-bottom: 0;
     margin-top: 0;
@@ -277,7 +277,7 @@ body {
     border-radius: 5px;
     border: 0.8px solid #4a4a68;
     color: #333;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Inter';
     line-height: 22.8571px;
     padding: 8px 12px;
     width: 380px;
@@ -404,7 +404,7 @@ body {
     display: block;
 }
 .slide-head-new {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter';
     line-height: 30px;
     margin: 20px 0 10px;
     text-align: center;
@@ -1167,7 +1167,7 @@ img {
     transition: background 0.3s;
     background-color: rgba(255, 255, 255, 0);
     color: #4a4a68;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter';
     font-size: 22px;
     font-weight: 800;
     line-height: 35.2px;
@@ -1870,7 +1870,7 @@ img {
         grid-template-rows: repeat(3, 20px);
     }
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Inter';
         width: 100%;
         overflow-x: hidden;
         padding: 0 !important;
