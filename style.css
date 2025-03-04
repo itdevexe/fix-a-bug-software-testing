@@ -16,6 +16,9 @@ body {
 .gallery-item {
     box-sizing: border-box;
 }
+.no{
+    display: none!important;
+}
 .a-div,
 .fw-a,
 .fw-mail,
@@ -103,13 +106,14 @@ body {
 .container7,
 .container8 {
     width: 100%;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 .container7 {
     max-width: 1140px;
 }
 .container8 {
     max-width: 1280px;
+    padding-bottom: 80px;
 }
 .nav {
     display: flex;
@@ -401,7 +405,12 @@ body {
 .content.live,
 .logo-container.active,
 .tab-content7.active {
-    display: block;
+    display: flex;
+
+    justify-content: center;
+}
+.tab-content7.active {
+    height: 644px;
 }
 .slide-head-new {
     font-family: 'Inter';
@@ -626,11 +635,12 @@ body {
 }
 .centerflex-tab {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 19px;
 }
 .tab-container2 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 19px;
@@ -1390,20 +1400,22 @@ img {
 }
 .tab-content7 {
     display: none;
-    max-width: 508px;
     height: 100%;
-    max-height: 664px;
 }
 .box,
 .cont-flex {
     display: flex;
 }
 .newtab-secimg {
-    padding: 98px 50px 98px 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    justify-content: center;
+
 }
+.newtab-secimg img{
+    height: 100%;
+}
+
 .widespace {
     color: #fff;
     white-space: nowrap;
@@ -2385,3 +2397,20 @@ img {
     display: block;
 }
 
+
+@media only screen and (max-width: 767px) {
+    .newcontainer {
+        padding: 16px;
+    }
+    .tab7 {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        padding: 9px 0px 9px 12px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .tab-content7.active {
+        height: auto;
+    }
+}
