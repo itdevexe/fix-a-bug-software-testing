@@ -38,4 +38,8 @@
         max-height: 40px;
         object-fit: contain;
     }
+    .gridmask.vertical{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
