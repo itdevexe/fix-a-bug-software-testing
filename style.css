@@ -28,7 +28,7 @@
     white-space: nowrap;
 }
 @media only screen and (max-width: 767px) {
-    .zoom_slider {
+    #simpleSlider {
         height: 820px;
     }
     .zoom_slider .mask .zoom_slide {
@@ -41,5 +41,9 @@
     .gridmask.vertical{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    #submit-btn9{
+        background: #fff;
+        color: #410e79!important;
     }
 }
