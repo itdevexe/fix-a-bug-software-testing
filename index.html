@@ -2801,6 +2801,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
+    let gmail=false
     $(document).ready(function() {
     function checkEmail(emailField, errorTextId) {   
         var email = emailField.val().trim(); // Trim to avoid spaces
@@ -2809,18 +2810,21 @@
         var errorText = $('#' + errorTextId); // Use jQuery for consistency
 
         if (reg.test(email)) {
-            errorText.hide(); // Hide error text
-            return true;  // Email is valid
+            // errorText.hide(); 
+            //return true;  
+            gmail = false
         } else {
-            errorText.show(); // Show error text
-            return false; // Email is invalid
+            //errorText.show(); // Show error text
+            //return false; // Email is invalid
+            gmail = true;
         }
     }
 
     $('#submit-btn').click(function(event) {
-        if (!checkEmail($('#email'), 'error-text')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email'), 'error-text')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email'), 'error-text')
     });
 
     $('#email').on('input', function() {
@@ -2829,9 +2833,10 @@
 
 
     $('#submit-btn3').click(function(event) {
-        if (!checkEmail($('#email3'), 'error-text3')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email3'), 'error-text3')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email3'), 'error-text3')
     });
 
     $('#email3').on('input', function() {
@@ -2839,9 +2844,10 @@
     });
 
     $('#submit-btn4').click(function(event) {
-        if (!checkEmail($('#email4'), 'error-text4')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email4'), 'error-text4')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email4'), 'error-text4')
     });
 
     $('#email4').on('input', function() {
@@ -2849,9 +2855,10 @@
     });
 
     $('#submit-btn5').click(function(event) {
-        if (!checkEmail($('#email5'), 'error-text5')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email5'), 'error-text5')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email5'), 'error-text5')
     });
 
     $('#email5').on('input', function() {
@@ -2859,9 +2866,10 @@
     });
 
     $('#submit-btn6').click(function(event) {
-        if (!checkEmail($('#email6'), 'error-text6')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email6'), 'error-text6')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email6'), 'error-text6')
     });
 
     $('#email6').on('input', function() {
@@ -2869,9 +2877,10 @@
     });
 
     $('#submit-btn7').click(function(event) {
-        if (!checkEmail($('#email7'), 'error-text7')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email7'), 'error-text7')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email7'), 'error-text7')
     });
 
     $('#email7').on('input', function() {
@@ -2879,9 +2888,10 @@
     });
 
     $('#submit-btn8').click(function(event) {
-        if (!checkEmail($('#email8'), 'error-text8')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email8'), 'error-text8')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email8'), 'error-text8')
     });
 
     $('#email8').on('input', function() {
@@ -2889,9 +2899,10 @@
     });
 
     $('#submit-btn9').click(function(event) {
-        if (!checkEmail($('#email9'), 'error-text9')) {
-            event.preventDefault();  // Stop form submission if email is invalid
-        }
+        // if (!checkEmail($('#email9'), 'error-text9')) {
+        //     event.preventDefault();  // Stop form submission if email is invalid
+        // }
+        checkEmail($('#email9'), 'error-text9')
     });
 
     $('#email9').on('input', function() {
@@ -3023,7 +3034,9 @@
         thankYouMessage.innerHTML = "Thank you! Your details have been submitted.";
         thankYouMessage.style.color = "#785dfb";
         form.style.display = "none";
-        document.querySelector("#divpopup").style.display = "flex";
+        if(!gmail){
+            document.querySelector("#divpopup").style.display = "flex";
+        }
       }
       thankYouMessage.style.display = "block";
     });
