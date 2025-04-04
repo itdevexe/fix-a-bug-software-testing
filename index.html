@@ -1596,11 +1596,21 @@
                                     <p class="t-b-pad">Agritech</p>
                                 </div>
 
-                                <div class="content32">
+                                <div class="content32 mobilehidecontent32">
                                     <img src="./software-testing/image/15thicon.webp" class="img50pximg" alt="">
                                     <p class="t-b-pad">Web3</p>
                                 </div>
                             </div>
+
+
+                            <div class="cont32centeralg">
+                                <div class="content32 desktophidecontent32">
+                                    <img src="./software-testing/image/15thicon.webp" class="img50pximg" alt="">
+                                    <p class="t-b-pad">Web3</p>
+                                </div>
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -1985,6 +1995,8 @@
                     </div>
 
                 </div>
+                <button class="slider-btn left" id="slideLeft">&#10094;</button>
+                <button class="slider-btn right" id="slideRight">&#10095;</button>
                 <div class="navigation_btns"></div>
             </div>
             <div class="btncenter2 no-margin-bottom">
@@ -2074,6 +2086,8 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="slider-btn left l1" id="slideLeft">&#10094;</button>
+                        <button class="slider-btn right r1" id="slideRight">&#10095;</button>
                         <div class="navigation_btns"></div>
                     </div>
                 </div>
@@ -2566,6 +2580,8 @@
 
 
                 </div>
+                <button class="slider-btn left" id="slideLeft">&#10094;</button>
+                <button class="slider-btn right" id="slideRight">&#10095;</button>
                 <div class="navigation_btns"></div>
             </div>
 
@@ -2619,8 +2635,8 @@
                                         <img src="./software-testing/image/endimg2.webp" class="img92" 3alt="">
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./software-testing/image/ceo.webp" class="img93 no-mobile" alt="">
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/ceo.webp" class="img93" alt="">
                                 </div>
                             </div>    
                         </div>
@@ -2639,8 +2655,8 @@
                                         <img src="./software-testing/image/6PhonePe.webp" class="img92" 3alt="">
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93 no-mobile" alt="">
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93" alt="">
                                 </div>
                             </div>    
                         </div>
@@ -2661,8 +2677,8 @@
                                 
                                     </div>    
                                 </div>
-                                <div>
-                                    <img src="./software-testing/image/program director.webp" class="img93 no-mobile" alt="">
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/program director.webp" class="img93" alt="">
                                 </div>
                             </div>    
                         </div>
@@ -2680,8 +2696,8 @@
                                         <img src="./software-testing/image/tescoimg.webp" class="img94" 3alt="">
                                     </div>
                                 </div>
-                                <div>
-                                    <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93 no-mobile" alt="">
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93" alt="">
                                 </div>
                             </div>    
                         </div>
@@ -2975,6 +2991,21 @@
 
 
 <script>
+    async function sendToZapier(email){
+        if(email.length>0){
+            return await fetch("https://zapier-forwarder.vercel.app/api/send-to-zapier", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email })
+        }).then(response => response.ok)
+        .catch(error => console.error("Error sending data to Zapier:", error));
+        }
+        return
+    }
+
+
   function sendToHubSpot(data) {
     return fetch("https://api.hsforms.com/submissions/v3/integration/submit/44821820/ff0ad92b-9d75-4ab0-948d-86af7253e369", {
       method: "POST",
@@ -3028,6 +3059,8 @@
       pageName: document.title,
     };
 
+
+    sendToZapier(formData.get('email'))
     sendToHubSpot({ fields, context }).then(success => {
       const thankYouMessage = form.closest("div").querySelector(".thankYou");
       if (success) {
