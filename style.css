@@ -672,6 +672,7 @@ body {
 }
 .imagesec777 {
     border-radius: 10px;
+    max-width: 485px;
 }
 .ptaghead {
     color: #4a4a68;
@@ -2405,9 +2406,16 @@ img {
     align-items: center;
     gap: 16px;
 }
+.imgcontainerinside.center{
+    justify-content: center;
+}
 .imgcontainerinside img{
     max-height: 40px;
     height: 100%;
+    width: auto;
+}
+.imgcontainerinside .logos-big{
+    max-height: 80px;
     width: auto;
 }
 .nav-btn{
