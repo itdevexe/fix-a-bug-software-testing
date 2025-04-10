@@ -1367,7 +1367,7 @@ img {
     max-width: 600px;
 }
 .lightbox-close {
-    font-size: 36px;
+    /* font-size: 36px; */
     color: #fff;
     position: absolute;
     top: 15px;
@@ -2544,4 +2544,13 @@ img {
     .testimonial{
         height: auto !important;
     }
+
+    .lightbox-frame{
+        display: flex;
+        width: 100%;
+        max-width: 300px;
+
+    }
+
+
 }
