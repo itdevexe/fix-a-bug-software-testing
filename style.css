@@ -2583,6 +2583,10 @@ img {
         max-width: 300px;
 
     }
-
+    
+    .email-form-heading {
+        max-width: 300px;
+        text-align: center;
+    }
 
 }
