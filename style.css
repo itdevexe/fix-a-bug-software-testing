@@ -2514,7 +2514,8 @@ img {
         width: 100%;
     }
     #simpleSlider {
-        height: 820px;
+        /* height: 820px; */
+        height: 620px;
     }
     .zoom_slider .mask .zoom_slide {
         height: 100%;
