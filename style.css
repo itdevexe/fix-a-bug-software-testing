@@ -2515,7 +2515,7 @@ img {
     }
     #simpleSlider {
         /* height: 820px; */
-        height: 620px;
+        height: 720px;
     }
     .zoom_slider .mask .zoom_slide {
         height: 100%;
@@ -2526,7 +2526,7 @@ img {
     }
     .gridmask.vertical{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: -1fr;
     }
     #submit-btn9{
         background: #fff;
