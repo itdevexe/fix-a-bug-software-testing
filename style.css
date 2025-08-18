@@ -2176,7 +2176,7 @@ img {
         padding: 20px;
         align-items: center;
         justify-items: center;
-        flex: 2;
+        flex: 1;
     }
     .form-flex-down,
     .fw-block {
@@ -2427,7 +2427,7 @@ img {
     justify-content: center;
 }
 .imgcontainerinside img{
-    max-height: 40px;
+    max-height: 66px;
     height: 100%;
     width: auto;
 }
@@ -2515,7 +2515,7 @@ img {
     }
     #simpleSlider {
         /* height: 820px; */
-        height: 800px;
+        height: 450px;
     }
     .zoom_slider .mask .zoom_slide {
         height: 100%;
