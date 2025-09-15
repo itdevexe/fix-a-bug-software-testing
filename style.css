@@ -1761,6 +1761,7 @@ img {
         flex-direction: row;
         gap: 6px;
         justify-content: center;
+        height: 83.7px ;
     }
     .mobile-img50px {
         width: 50px;
