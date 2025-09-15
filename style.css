@@ -2200,6 +2200,7 @@ img {
         width: 100%;
         display: contents;
         justify-content: center;
+        height: 362.4px;
     }
     .hero-div {
         display: none;
