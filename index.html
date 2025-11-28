@@ -60,28 +60,44 @@
 <body>
     <div class="page-wrapper">
 
-    <section class="nav-section">
-            <div class="container1">
-                <div class="nav">
-                    <a href=""><img class="image-nav" src="./software-testing/image/moolya-logo.webp" alt=""></a>
-                    <nav class="nav1">
-                        <a href="#flip-card">Our Services</a>
-                        <a href="#why-us">Why us?</a>
-                        <a href="#case_studies">Case studies</a>
-                        <a href="#testimonials">Testimonials</a>
-                        <div class="cta">
-                            <button class="btn2 cta-click" id="btn-1">Talk to an Expert</button>
+  <section class="nav-section">
+    <div class="container1">
+        <div class="nav">
+            <a href=""><img class="image-nav" src="./software-testing/image/moolya-logo.webp" alt=""></a>
+            <nav class="nav1">
+                <a href="#flip-card">Our Services</a>
+                <!-- <a class="no-desktop" href="#faqsec">Our Services</a> -->
+                <a href="#why-us">Why us</a>
+                <a href="#engagement_models">Engagement models</a>
+                <a href="#case_studies">Case Studies</a>
+                <a href="#Clientele">Our Customers</a>
+                <a href="#testimonials">Testimonials</a>
+                
+                <form id="email-form-10" class="no-mobile" name="Email Form 10">
+                    <div>
+                        <div class="form-flex-down">
+                            <div>
+                                <input type="text" class="email-field" placeholder="Work Email" id="email10" name="email">
+                                <p class="txt-error" id="error-text10">Enter a business email</p>
+                            </div>
+                            <div class="center-alg">
+                                <button class="btn2" id="submit-btn10">Talk to an Expert</button>
+                                <img class="nav-email-close no-mobile" id="nav-email-close" width="35" height="35" src="./software-testing/image/close.svg"/>
+                            </div>
                         </div>
-                    </nav>
-                    <button class="hamburger" id="hamburger-btn">
-                        <span id="hamburger-icon">&#9776;</span>
-                    </button>
-                </div>
-            </div>
-    </section>
+                    </div>
+                </form>
+                <div id="thankYou" class="thankYou"></div>
+            </nav>
+            <button class="hamburger" id="hamburger-btn">
+                <span id="hamburger-icon">&#9776;</span>
+            </button>
+        </div>
+    </div>
+</section>
 
     <section class="section">
-        <div class="container2"> <!--container-->
+        <div class="container2 hero-container"> <!--container-->
             <div class="flex-row">
 
 
@@ -89,25 +105,33 @@
 
                     <div>
                         <p class="size52px"><span class="color-purp">End-to-End </span>Software Testing Services</p>
+                        <img class="hero-heading-underline no-desktop" fetchpriority="high" src="./software-testing/image/image-underline.svg" alt="">
                         <p class="color-grey">Deliver flawless products faster with Moolya's growth-driven testing</p>
+                    </div>
+
+                    <div class="hero-div-mobile-visible">
+                        <img class="hero-img" fetchpriority="high" src="./software-testing/image/hero-section-img.webp" alt="">
+                    <!-- loading="lazy" -->
                     </div>
 
                     <div class="hero-form hero-form-40"> 
 
                         <form id="email-form-2" name="Email Form 2">
                             <div>
-                                <h3 class="email-form-heading" id="form-heading">Enter your work email and schedule a call for priority support!</h3>
+                                <h3 class="email-form-heading" id="form-heading">Enter your work-email and schedule a call for priority support!</h3>
                             
                                 <div class="form-flex-down">
                                 
-                                    <div>
+                                      <div>
                                         <input type="text" class="email-field" placeholder="Work Email" id="email" name="email" >
                                         <p class="txt-error" id="error-text">Enter a business email</p>
                                     </div>
                                     
-                                    <div class="center-alg">
-                                        <button class="btn2" id="submit-btn">Talk to an Expert</button>
+                                  
+                                    <div class="center-alg no-bg-img-btn">
+                                        <button class="btn2 " id="submit-btn">SCHEDULE A CALL</button>
                                     </div>
+                                  
 
                                 </div>
                             </div>
@@ -118,38 +142,34 @@
                         
                     </div>
 
-                    <div class="hero-div-mobile-visible">
-                        <img class="hero-img" fetchpriority="high" src="./software-testing/image/Hero_Section.webp" alt="">
-                    <!-- loading="lazy" -->
-                    </div>
 
                     <div class="blocks-flex">
 
                         <div class="block-text-div">
-                            <p class="bold600">We are recognized by</p>
+                            <p class="color-grey p">We are recognized by</p>
                         </div>
 
                         <div class="flex-row1">
 
                             <div class="image1">
                                 <img class="image1"
-                                    src="./software-testing/image/67936c8e331ad2063f9378d6_6401ce79a0436972291a127d_Group 34627 (1).webp"
+                                    src="./software-testing/image/rec-1.webp"
                                     alt="">
                             </div>
 
                             <div class="image1">
                                 <img class="image1"
-                                    src="./software-testing/image/67936c8e331ad2063f9378d8_6401ce79b6c95f73666e2ce4_Group 34628.webp" alt="">
+                                    src="./software-testing/image/rec-2.webp" alt="">
                             </div>
 
                             <div class="image1">
                                 <img class="image1"
-                                    src="./software-testing/image/67936c8e331ad2063f9378d9_6401ce78a8041c269acf34a6_Group 34629.webp" alt="">
+                                    src="./software-testing/image/rec-3.webp" alt="">
                             </div>
 
-                            <div class="image1">
-                                <img class="image1"
-                                    src="./software-testing/image/67936c8e331ad2063f9378d7_6401ce79b421f81138448f6a_Group 34630.webp" alt="">
+                            <div class="image1 your-story-icon">
+                                <img class="image1 your-story-icon"
+                                    src="./software-testing/image/your-story.svg" alt="">
                             </div>
 
                         </div>
@@ -159,7 +179,7 @@
                 </div>
 
                 <div class="hero-div">
-                    <img src="./software-testing/image/Hero_Section.webp" alt="">
+                    <img src="./software-testing/image/fab-hero.webp" alt="">
                 </div>
 
                 <!-- FORM
@@ -249,40 +269,59 @@
     </div>
 
 
-    <section>
+    <section class="no-mobile">
       <div class="cus-slider-wrapper">
         <div class="cus-slider-container">
           <div class="cus-slide">
+            
             <img src="./software-testing/image/Licious.webp" alt="Random Image">
             <img src="./software-testing/image/2Gupshup.webp" alt="Random Image">
             <img src="./software-testing/image/3cultfit.webp" alt="Random Image">
             <img src="./software-testing/image/4Flipkart.webp" alt="Random Image">
             <img src="./software-testing/image/5Collibra.webp" alt="Random Image">
             <img src="./software-testing/image/6PhonePe.webp" alt="Random Image">
-          </div>
-          <div class="cus-slide">
+            <img src="./software-testing/image/rabobank.webp" alt="Random Image">
+            <img src="./software-testing/image/13postman.webp" alt="Random Image">
+            <img src="./software-testing/image/oyo.webp" alt="Random Image">
+        </div>
+        <div class="cus-slide">
+            <img src="./software-testing/image/off5.png" alt="Random Image">
+            <img src="./software-testing/image/swiggy.webp" alt="Random Image">
             <img src="./software-testing/image/7fynd.webp" alt="Random Image">
             <img src="./software-testing/image/8coinswitch.webp" alt="Random Image">
             <img src="./software-testing/image/9jupiter.webp" alt="Random Image">
+            <img src="./software-testing/image/adia.webp" alt="Random Image">
             <img src="./software-testing/image/10_ntt-data2.webp" alt="Random Image">
-            <img src="./software-testing/image/11hotstar3.webp" alt="Random Image">
-            <img src="./software-testing/image/12_foodpanda.webp" alt="Random Image">
+             <img src="./software-testing/image/nbc.webp" alt="Random Image">
+            <!-- <img src="./software-testing/image/11hotstar3.webp" alt="Random Image"> -->
+            <img src="./software-testing/image/hyundai1.webp" alt="Random Image">
+            <img src="./software-testing/image/keysight.webp" alt="Random Image">
           </div>
           <div class="cus-slide">
+            <img src="./software-testing/image/Reliance.webp" alt="Random Image">
+            <img src="./software-testing/image/off5.png" alt="Random Image">
+            <img src="./software-testing/image/12_foodpanda.webp" alt="Random Image">
             <img src="./software-testing/image/13postman.webp" alt="Random Image">
+            <img src="./software-testing/image/medidata.webp" alt="Random Image">
             <img src="./software-testing/image/Myntra-logo.svg" alt="Random Image">
             <img src="./software-testing/image/hilti.png" alt="Random Image">
             <img src="./software-testing/image/16_image 190.webp" alt="Random Image">
             <img src="./software-testing/image/sony-logo.png" alt="Random Image">
             <img src="./software-testing/image/18_Sun_NXT_logo_small.webp" alt="Random Image">
+           
           </div>
           <div class="cus-slide">
             <img src="./software-testing/image/Licious.webp" alt="Random Image">
+            <img src="./software-testing/image/manufacturing/Schneider-Electric-logo-jpg-.webp" alt="Random Image">
             <img src="./software-testing/image/2Gupshup.webp" alt="Random Image">
             <img src="./software-testing/image/3cultfit.webp" alt="Random Image">
             <img src="./software-testing/image/4Flipkart.webp" alt="Random Image">
             <img src="./software-testing/image/5Collibra.webp" alt="Random Image">
             <img src="./software-testing/image/5vymo.webp" alt="Random Image">
+            <img src="./software-testing/image/adia.webp" alt="Random Image">
+            <img src="./software-testing/image/swiggy.webp" alt="Random Image">
+            <img src="./software-testing/image/Reliance.webp" alt="Random Image">
+            
           </div>
         </div>
       </div>
@@ -295,10 +334,19 @@
             <img src="./software-testing/image/2Gupshup.webp" alt="Random Image">
           </div>
           <div class="cus-slide-mobile">
+            <img src="./software-testing/image/adia.webp" alt="Random Image">
+          </div>
+          <div class="cus-slide-mobile">
             <img src="./software-testing/image/3cultfit.webp" alt="Random Image">
           </div>
           <div class="cus-slide-mobile">
             <img src="./software-testing/image/4Flipkart.webp" alt="Random Image">
+          </div>
+          <div class="cus-slide-mobile">
+            <img src="./software-testing/image/medidata.png" alt="Random Image">
+          </div>
+          <div class="cus-slide-mobile">
+            <img src="./software-testing/image/off5.png" alt="Random Image">
           </div>
           <div class="cus-slide-mobile">
             <img src="./software-testing/image/5Collibra.webp" alt="Random Image">
@@ -319,7 +367,7 @@
             <img src="./software-testing/image/10_ntt-data2.webp" alt="Random Image">
           </div>
           <div class="cus-slide-mobile">
-            <img src="./software-testing/image/11hotstar3.webp" alt="Random Image">
+            <img src="./software-testing/image/Reliance.png" alt="Random Image">
           </div>
           <div class="cus-slide-mobile">
             <img src="./software-testing/image/12_foodpanda.webp" alt="Random Image">
@@ -348,11 +396,58 @@
     </section>
 
 
+    <section class="mobile-logo-section no-desktop">
+        <div class="container3">
+            <div class="brand-logo-wrapper">
+    
+                <div class="logo-set logo-set1">
+                    <!-- 9 logos here -->
+                     <img src="./software-testing/image/Reliance.png" alt="Random Image">
+                     <img src="./software-testing/image/Myntra-logo.svg" alt="Random Image">
+                     <img src="./software-testing/image/walmart.svg" style="margin-left: 10px;" alt="Random Image">
+                     <img src="./software-testing/image/sony-logo.png" alt="Random Image">
+                     <img src="./software-testing/image/off5.png" class="off5th-logo" alt="Random Image">
+                     <img src="./software-testing/image/ola.svg" alt="Random Image">
+                     <img src="./software-testing/image/medidata.png" alt="Random Image">
+                     <img src="./software-testing/image/adia.webp" alt="Random Image">
+                     <img src="./software-testing/image/5Collibra.webp" alt="Random Image">
+                     
+                    <!-- ...total 9 -->
+                </div>
+    
+                
+    
+                <div class="logo-set logo-set2">
+                    <img src="./software-testing/image/flipkart.png" alt="Random Image">
+                    <img src="./software-testing/image/rabobank1.webp" alt="Random Image">
+                    <img src="./software-testing/image/nbc.webp" alt="Random Image">
+                    <img src="./software-testing/image/keysight.webp" alt="Random Image">
+                    <img src="./software-testing/image/manufacturing/Schneider-Electric-logo-jpg-.webp" alt="Random Image">
+                    <img src="./software-testing/image/phonepe.webp" alt="Random Image">
+                    <img src="./software-testing/image/swiggy.webp" alt="Random Image">
+                    <img src="./software-testing/image/hyundai1.webp" alt="Random Image">
+                    <img src="./software-testing/image/oyo.webp" alt="Random Image">
+                    <!-- ...total 9 -->
+                </div>
+
+                <p class="view-more-btn more">View More ↓</p>
+                <p class="view-more-btn less">View Less ↑</p>
+    
+            </div>
+        </div>
+    </section>
+
+
     <section class="section">
         <div class="container3">
             <div class="scr-center">
                 <div class="wide-full">
-                    <h1 class="fnt-size">Trusted by <span class="color-purp">35+ Unicorns</span> 🦄 of India</h1>
+                <h1 class="fnt-size">
+                    Trusted by <span class="color-purp">35+</span>
+                    <span class="mobile-break"></span>
+                    <span class="color-purp">Unicorns</span> 🦄 of India
+                </h1>
+
                 </div>
 
                 <div class="box">
@@ -402,9 +497,9 @@
     <section class="section12">
         <div class="container323" id="faqsec">
             <div class="accordions">
-                <div class="center-alg12">
-                    <h1 class="fnt-size221"><span class="color-purp">Testing Services</span> like never before</h1>
-                    <p class="txt-color">Highlighting our Capabilities and Expertise</p>
+                <div class="center-alg1">
+                    <h1 class="fnt-size2"><span class="color-purp">Testing Services</span> like never before</h1>
+                    <p class="txt-color">A comprehensive testing approach for whatever your needs may be</p>
                 </div>
                 <div>
                     <!-- 1 -->
@@ -412,14 +507,14 @@
                         <input class="checkbox" type="checkbox" id="question-1">
                         <label for="question-1" class="accordion__header" id="question-1"> <img class="mobile-img50px" src="./software-testing/image/search1.webp" alt=""> Exploratory Testing</label>
                         <div class="accordion__content">
-                            <p>Give us your app and we'll tell you where it breaks!</p>
+                            <p>Uncover hidden issues by testing your product the way real users would without scripts, with real curiosity</p>
                         </div>
                     </div>
 
                     <!-- 2 -->
                     <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-2">
-                        <label for="question-2" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/gal2.webp" alt="">Automation Engineering</label>
+                        <label for="question-2" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/gal2.webp" alt="">Test Automation</label>
                         <div class="accordion__content">
                             <p>Our tried and testing testing methodologies that will help you save both time and cost</p>
                         </div>
@@ -430,87 +525,100 @@
                         <input class="checkbox" type="checkbox" id="question-3">
                         <label for="question-3" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/watch3.webp" alt="">Functional Testing</label>
                         <div class="accordion__content">
-                            <p>Attain release readiness and a seamless user experience with robust functional testing</p>
+                            <p>Achieve release readiness and deliver a seamless user experience through comprehensive functional testing</p>
                         </div>
                     </div>
 
                     <!-- 4 -->
                     <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-4">
-                        <label for="question-4" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/mobile3.webp" alt="">Mobile App Testing</label>
+                        <label for="question-4" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/mobile3.webp" alt="">Mobile and Web App Testing</label>
                         <div class="accordion__content">
                             <p>Hyperscaling competencies for your product across devices and capabilities</p>
                         </div>
                     </div>
 
-                    <!-- 5 -->
+                     <!-- 5 -->
+
                     <div class="accordion">
-                        <input class="checkbox" type="checkbox" id="question-5">
-                        <label for="question-5" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/watch2-5.webp" alt="">Performance / load Testing</label>
+                        <input class="checkbox" type="checkbox" id="question-6">
+                        <label for="question-6" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/testing-ai-icon.svg" alt=""> Testing AI</label>
                         <div class="accordion__content">
-                            <p>Performance and load testing services ensure that your software can handle the demands of real-world usage. No matter how many users are accessing it or how complex the tasks they're performing!</p>
+                            <p>Validating model performance, safety, and robustness with comprehensive functional, data, and adversarial testing for AI-driven products</p>
                         </div>
                     </div>
 
                     <!-- 6 -->
+
                     <div class="accordion">
-                        <input class="checkbox" type="checkbox" id="question-6">
-                        <label for="question-6" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/mouse4.webp" alt="">UI/UX Testing</label>
+                        <input class="checkbox" type="checkbox" id="question-5">
+                        <label for="question-5" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/watch2-5.webp" alt="">Performance / Load Testing</label>
                         <div class="accordion__content">
-                            <p>let's evaluate the user experience and interface of your app, shall we?</p>
+                            <p>Performance and load testing ensure your software can handle real-world demands. No matter the number of users or complexity of tasks, it stays reliable</p>
                         </div>
                     </div>
-                </div>
-                <div id="testing-accordion">
+                    
+
                     <!-- 7 -->
                     <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-7">
-                        <label for="question-7" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/grf6.webp" alt="">UAT / Release Auditing</label>
+                        <label for="question-7" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/mouse4.webp" alt="">UI/UX Testing</label>
+                        <div class="accordion__content">
+                            <p>We assess the user experience and interface of your app to ensure it’s seamless, intuitive, and user-friendly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testing-accordion">
+                    <!-- 8 -->
+                    <div class="accordion">
+                        <input class="checkbox" type="checkbox" id="question-8">
+                        <label for="question-8" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/grf6.webp" alt="">UAT / Release Auditing</label>
                         <div class="accordion__content">
                             <p>Augment your software release effectiveness with comprehensive UAT and release auditing</p>
                         </div>
                     </div>
     
-                    <!-- 8 -->
-                    <div class="accordion">
-                        <input class="checkbox" type="checkbox" id="question-8">
-                        <label for="question-8" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/cube-circ7.webp" alt="">AI/ML Testing</label>
-                        <div class="accordion__content">
-                            <p>Help you assess the intelligence of your algorithms, ML models & data to ensure your product maintains optimal functionality.</p>
-                        </div>
-                    </div>
-    
                     <!-- 9 -->
-                    <div class="accordion">
+                    <!-- <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-9">
-                        <label for="question-9" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/img8.webp" alt="">Security Testing /VaPT</label>
+                        <label for="question-9" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/cube-circ7.webp" alt="">AI/ML Testing</label>
                         <div class="accordion__content">
-                            <p>Let's evaluate your security mechanisms and discover Vulnerabilities, threats beforehand/ witha proactive approach.</p>
+                            <p>Help you assess the intelligence of your algorithms, ML models & data so your product always maintains optimal functionality</p>
                         </div>
-                    </div>
+                    </div> -->
     
                     <!-- 10 -->
                     <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-10">
-                        <label for="question-10" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/image 9.webp" alt="">Testing on Device Farms</label>
+                        <label for="question-10" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/img8.webp" alt="">Security Testing /VaPT</label>
                         <div class="accordion__content">
-                            <p>Optimize your app's performance acrosss a spectrum of devices</p>
+                            <p>Evaluate your security mechanisms and uncover vulnerabilities and threats with a proactive, preventive approach</p>
                         </div>
                     </div>
     
                     <!-- 11 -->
                     <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-11">
-                        <label for="question-11" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/heart10.webp" alt="">Accessibility Testing</label>
+                        <label for="question-11" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/image 9.webp" alt="">Testing on Device Farms</label>
                         <div class="accordion__content">
-                            <p>Testing the relative ease of usage of an application on UX/UI and frontend capabilities</p>
+                            <p>Optimize your app's performance acrosss a spectrum of devices</p>
                         </div>
                     </div>
     
                     <!-- 12 -->
                     <div class="accordion">
                         <input class="checkbox" type="checkbox" id="question-12">
-                        <label for="question-12" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/img11.webp" alt="">Device Fragmentation Testing</label>
+                        <label for="question-12" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/heart10.webp" alt="">Accessibility Testing</label>
+                        <div class="accordion__content">
+                            <p>Testing the relative ease of usage of an application on UX/UI and frontend capabilities</p>
+                        </div>
+                    </div>
+    
+                    <!-- 13 -->
+                    <div class="accordion">
+                        <input class="checkbox" type="checkbox" id="question-13">
+                        <label for="question-13" class="accordion__header"><img class="mobile-img50px" src="./software-testing/image/img11.webp" alt="">Device Fragmentation Testing</label>
                         <div class="accordion__content">
                             <p>Understand, test & optimize your software's performace across browsers and devices.</p>
                         </div>
@@ -520,16 +628,16 @@
             </div>
             
             <div class="btncenter2" style="margin-top: 20px;">
-                <button class="btn-show-more" id="show-more-accordion">Show More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 30 19" fill="none">
+                <button class="btn-show-more" id="show-more-accordion" style="margin-bottom: 30px;">Show More <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 30 19" fill="none">
                     <path d="M26.9824 2.96514L15.0174 15L2.98252 3.03498" stroke="#785DFB" stroke-width="5" stroke-linecap="round"/>
-                    </svg>    </button>
+                    </svg>  </button>
             </div> 
-            <div class="btncenter2">
+            <div class="btncenter2" style="margin-top: 0;">
                 <div class="hero-form"> 
 
                     <form id="email-form-3" name="Email Form 2">
                         <div>
-                            <h3 class="email-form-heading" id="form-heading3">Enter your work email and schedule a call for priority support!</h3>
+                            <h3 class="email-form-heading" id="form-heading3">Enter your work-email and schedule a call for priority support!</h3>
                         
                             <div class="form-flex-down">
                             
@@ -561,9 +669,9 @@
 
     <section class="section2">
         <div class="container4" id="flip-card">
-            <div class="center-alg">
+            <div class="center-alg1 no-padding-top">
                 <h1 class="fnt-size2"><span class="color-purp">Testing Services</span> like never before</h1>
-                <p class="txt-color">Highlighting our Capabilities and Expertise</p>
+                <p class="txt-color"> A comprehensive testing approach for whatever your needs may be</p>
             </div>
             <div class="flexrow2">   
                 <div class="flip-card noleftborder">
@@ -574,7 +682,7 @@
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Give us your app and we'll tell you where it breaks!</p>
+                            <p>Uncover hidden issues by testing your product the way real users would without scripts, with real curiosity</p>
                         </div>
                     </div>
                     <div>
@@ -591,11 +699,11 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="./software-testing/image/gal2.webp" alt="Avatar" style="width:90px">
-                            <h3 class="font-col-size">Automation<br>Testing</h3>
+                            <h3 class="font-col-size">Test<br>Automation</h3>
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Our tried and testing methodologies that will help you save both time and cost.</p>
+                            <p>Our tried and testing testing methodologies that will help you save both time and cost</p>
                         </div>
                     </div>
                     <div>
@@ -613,7 +721,7 @@
                         </div>
                         <div class="flip-card-back">
                         <!-- <h3>Back of Card</h3> -->
-                            <p>Attain release readiness and a seamless user experience with robust functional testing.</p>
+                            <p>Achieve release readiness and deliver a seamless user experience through comprehensive functional testing</p>
                         </div>
                     </div>
                     <div>
@@ -626,11 +734,11 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="./software-testing/image/mobile3.webp" alt="Avatar" style="width:90px">
-                            <h3 class="font-col-size">Mobile App <br>Testing</h3>
+                            <h3 class="font-col-size">Mobile & Web<br> App Testing</h3>
                         </div>
                         <div class="flip-card-back">
                         <!-- <h3>Back of Card</h3> -->
-                            <p>Optimize your apps for in Android/iOS platform for seamless user experience.</p>
+                            <p>Hyperscaling competencies for your product across devices and capabilities</p>
                         </div>
                     </div>
                     <div>
@@ -640,20 +748,17 @@
                 </div>
             </div>
 
-
-
-
-
+              
             <div class="flexrow2 ">   
                 <div class="flip-card noleftborder">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="./software-testing/image/mouse4.webp" alt="Avatar" style="width:90px">
-                            <h3 class="font-col-size">UI/UX<br>Testing</h3>
+                            <img src="./software-testing/image/testing-ai.svg" alt="Avatar" style="width:90px">
+                            <h3 class="font-col-size">Testing<br>AI</h3>
                         </div>
                         <div class="flip-card-back">
                         <!-- <h3>Back of Card</h3> -->
-                            <p>Let's evaluate the user experience and interface of your app, shall we?</p>
+                            <p>Validating model performance, safety, and robustness with comprehensive functional, data, and adversarial testing for AI-driven products</p>
                         </div>
                     </div>
                     <div>
@@ -666,6 +771,8 @@
                     </div>
                 </div>
 
+               
+
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -674,8 +781,29 @@
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Performance and load testing services ensure that your software can handle the demands of real-world usage, no matter how many users are accessing it or how complex the tasks they're performing.</p>
+                            <p>Performance and load testing ensure your software can handle real-world demands. No matter the number of users or complexity of tasks, it stays reliable</p>
                         </div>
+                    </div>
+                    <div>
+                        <img src="./software-testing/image/+sign.webp" alt="Corner Image" class="corner-image">
+                
+                    </div>
+                </div>
+
+                 <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./software-testing/image/mouse4.webp" alt="Avatar" style="width:90px">
+                            <h3 class="font-col-size">UI/UX<br> Testing</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <!-- <h3>Back of Card</h3> -->
+                            <p>We assess the user experience and interface of your app to ensure it’s seamless, intuitive, and user-friendly</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./software-testing/image/+sign.webp" alt="Corner Image" class="l-corner-image">
+                
                     </div>
                     <div>
                         <img src="./software-testing/image/+sign.webp" alt="Corner Image" class="corner-image">
@@ -692,7 +820,7 @@
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Augment your software release effectiveness with comprehensive UAT and release auditing.</p>
+                            <p>Augment your software release effectiveness with comprehensive UAT and release auditing</p>
                         </div>
                     </div>
                     <div>
@@ -705,14 +833,14 @@
                     </div>
                 </div>
 
-                <div class="flip-card">
+
+                <!-- <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="./software-testing/image/cube-circ7.webp" alt="Avatar" style="width:90px">
                             <h3 class="font-col-size">AI/ML<br>Testing</h3>
                         </div>
                         <div class="flip-card-back">
-                            <!-- <h3>Back of Card</h3> -->
                             <p>Help you assess the intelligence of your algorithms, ML models & data to ensure your product maintains optimal functionality.</p>
                         </div>
                     </div>
@@ -720,7 +848,7 @@
                         <img src="./software-testing/image/+sign.webp" alt="Corner Image" class="corner-image">
                 
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
@@ -734,7 +862,7 @@
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Let's evaluate your security mechanisms and discover Vulnerabilities, threats beforehand with a proactive approach.</p>
+                            <p>Evaluate your security mechanisms and uncover vulnerabilities and threats with a proactive, preventive approach</p>
                         </div>
                     </div>
                     
@@ -747,12 +875,12 @@
                 <div class="flip-card nobottom-border">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="./software-testing/image/image 9.webp" alt="Avatar" style="width:90px">
-                            <h3 class="font-col-size">Testing on Device<br>farms</h3>
+                            <img src="./software-testing/image/device-farms.svg" alt="Avatar" style="width:90px">
+                            <h3 class="font-col-size">Testing on <br>Device Farms</h3>
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Optimize your app's performance acrosss a spectrum of devices.</p>
+                            <p>Optimize your app's performance acrosss a spectrum of devices</p>
                         </div>
                     </div>
                     <!-- <div>
@@ -770,7 +898,7 @@
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Testing the relative ease of usage of an application on UX/UI and frontend capabilities.</p>
+                            <p>Testing the relative ease of usage of an application on UX/UI and frontend capabilities</p>
                         </div>
                     </div>
                     <!-- <div>
@@ -783,23 +911,23 @@
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="./software-testing/image/img11.webp" alt="Avatar" style="width:90px">
-                            <h3 class="font-col-size">Device<br>Fragmentation<br>Testing</h3>
+                            <h3 class="font-col-size">Device<br>Fragmentation</h3>
                         </div>
                         <div class="flip-card-back">
                             <!-- <h3>Back of Card</h3> -->
-                            <p>Understand, test & optimize your software's performace across browsers and devices.</p>
+                            <p>Understand, test & optimize your software's performace across browsers and devices</p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="btncenter">
+            <div class="btncenter no-desktop">
                 <div class="hero-form"> 
 
                     <form id="email-form-5" name="Email Form 2">
                         <div>
-                            <h3 class="email-form-heading" id="form-heading5">Enter your work email and schedule a call for priority support!</h3>
+                            <h3 class="email-form-heading" id="form-heading5">Enter your work-email and schedule a call for priority support!</h3>
                         
                             <div class="form-flex-down">
                             
@@ -828,9 +956,9 @@
     </section>  
 
 
-    <section class="section">
+    <section class="section" id="engagement_models">
         <div class="container4">
-            <div class="center-alg1 no-padding-top">
+            <div class="center-alg1 no-padding-top no-padding-right no-padding-left">
                 <h1 class="fnt-size2">Our<span class="color-purp"> Engagement </span>Models</h1>
                 <p class="txt-color">Find brilliance that fits your needs</p>
             </div>
@@ -839,12 +967,12 @@
                     <div class="image">
                         <div class="dispflex">    
                             <img src="./software-testing/image/Lp1.webp" alt="Project-Based Testing">
-                            <p class="headingp">Project-Based Testing</p>
+                            <p class="headingp">Ownership Model</p>
                         </div>    
 
                         <div class="content">
                             <!-- <h3>Project-Based Testing</h3> -->
-                            <p class="p2onhover">Leverage comprehensive and tailored testing solutions with our Project-Based Testing service, where every aspect of your project is thoroughly tested for functionality, performance, and security.</p>
+                            <p class="p2onhover">Our customers love this model. We own QA end-to-end strategy, execution, automation, and release quality - while your team focuses on product and growth</p>
                         </div>
                     </div>
 
@@ -861,7 +989,7 @@
 
                         <div class="content">
                             <!-- <h3>Project-Based Testing</h3> -->
-                            <p class="p2onhover">From planning and execution to monitoring and reporting, streamline your testing efforts, optimize resources, and achieve higher software quality with our managed testing services.</p>
+                            <p class="p2onhover">We manage QA end-to-end and own the outcomes. Our team is chosen and led by us, with the option for clients to participate in the selection when needed</p>
                         </div>
                     </div>
 
@@ -874,12 +1002,12 @@
                     <div class="image">
                         <div class="dispflex">    
                             <img src="./software-testing/image/Lpit3.webp" alt="Project-Based Testing">
-                            <p class="headingp">Products in Testing</p>
+                            <p class="headingp">Project Based Testing</p>
                         </div>    
 
                         <div class="content">
                             <!-- <h3>Project-Based Testing</h3> -->
-                            <p class="p2onhover">Whether it is Mobile or Desktop Applications, our Products Testing Services undergoes rigorous Testing, designed to meet your highest expectations.</p>
+                            <p class="p2onhover">Flexible project-based QA on T&M or milestone models to help you move fast, manage scope easily, and get reliable test outcomes</p>
                         </div>
                     </div>
 
@@ -889,12 +1017,12 @@
                     <div class="image">
                         <div class="dispflex">    
                             <img src="./software-testing/image/Lac4.webp" alt="Project-Based Testing">
-                            <p class="headingp">Advisory & Consulting</p>
+                            <p class="headingp">Products in Testing</p>
                         </div>    
 
                         <div class="content">
                             <!-- <h3>Project-Based Testing</h3> -->
-                            <p class="p2onhover">Through tailored recommendations and actionable plans, empower your testing process and elevate your software quality with our expert Advisory & Consulting Testing Services.</p>
+                            <p class="p2onhover">We bring our own testing products, accelerators, and frameworks into your setup - speeding up test cycles, improving coverage, and giving you deeper visibility across releases</p>
                         </div>
                     </div>
 
@@ -907,12 +1035,12 @@
 
             </div>
 
-            <div class="btncenter2 no-margin-bottom">
+            <!-- <div class="btncenter2 no-margin-bottom">
                 <div class="hero-form"> 
 
                     <form id="email-form-4" name="Email Form 2">
                         <div>
-                            <h3 class="email-form-heading" id="form-heading4">Enter your work email and schedule a call for priority support!</h3>
+                            <h3 class="email-form-heading" id="form-heading4">Enter your work-email and schedule a call for priority support!</h3>
                         
                             <div class="form-flex-down">
                             
@@ -933,7 +1061,7 @@
                     <div id="thankYou" class="thankYou"></div>
                     
                 </div>
-            </div>   
+            </div>    -->
         
         </div>    
     </section>
@@ -942,13 +1070,13 @@
     <section class="section4">
         <div class="container4" id="why-us">
             <div class="center-alg">
-                <h1 class="fnt-size2">Why <span class="color-purp">IT leaders</span>  around the world choose <span class="color-purp">Moolya</span> </h1>
-                <p class="txt-color">Get the benefits of Growth Driven Testing</p>
+                <h1 class="fnt-size2"> <span class="color-purp">Why</span>  Tech Leaders around the world choose <span class="color-purp">Moolya</span> </h1>
+                <p class="txt-color">What’s behind “Moolya’s way of Testing”</p>
             </div>
 
             <div class="innercont">
                 <div class="tab">
-                    <div class="section-center no-padding-bottom">
+                    <div class="section-center no-padding-bottom" style="margin-top: 38px;">
                         <div class="image21 no-padding-bottom">
                             <img src="./software-testing/image/img21.webp" alt="" class="img21-igm">
                         </div>
@@ -968,7 +1096,7 @@
                                     <button class="button" data-id="step4"><img data-id="step4" class="tabimg1" src="./software-testing/image/tabimg4.webp" alt=""></button>
                                 </div>
                                 <div class="tab-btn-div-b">
-                                    <button class="button" data-id="step5"><img data-id="step5" class="tabimg1" src="./software-testing/image/tabimg5.webp" alt=""></button>
+                                    <button class="button" data-id="step5"><img data-id="step5" class="tabimg1" src="./software-testing/image/tabimg5.svg" alt=""></button>
                                 </div>
                                 <!-- <button class="button" data-id="step2">Tab 2</button>
                                 <button class="button" data-id="step3">Tab 3</button> -->
@@ -977,70 +1105,73 @@
                                 <div class="content live tabflexdown" id="step1">
                                     <h2 class="size-color-h2">Optimize your SDLC</h2>
                                     <div class="wide444px">
-                                        <p>Introducing test strategies to your SDLC to help reduce your manpower, increase productivity and cut costs.</p>
+                                        <p>Introducing smart test strategies into your SDLC to reduce effort by up to 30%, boost productivity by 40%, and cut release costs by nearly half</p>
                                     </div>
                                 </div>
                                 <div class="content tabflexdown" id="step2">
                                     <h2 class="size-color-h2">Testing mapped to growth</h2>
                                     <div class="wide444px">
-                                        <p>Bringing in a PO, PM, and BA mindset to enhance the test value of your product by understanding its unique context, ultimately leveraging testing as a growth engine.</p>
+                                        <p>Bringing in a PO, PM, and BA mindset to enhance the test value of your product by understanding its unique context, ultimately leveraging testing as a growth engine</p>
                                     </div>
                                 </div>
                                 <div class="content tabflexdown" id="step3">
-                                    <h2 class="size-color-h2">Gathering product context</h2>
+                                    <h2 class="size-color-h2">Gathering the right context</h2>
                                     <div class="wide444px">
-                                        <p>Understanding the product, User, Tech and KYC context into our questioning framework before taking up any project.</p>
+                                        <p>Understanding the product, User, Tech and KYC context into our questioning framework before taking up any project</p>
                                     </div>
                                 </div>
 
                                 <div class="content tabflexdown" id="step4">
                                     <h2 class="size-color-h2">Find the right blend</h2>
                                     <div class="wide444px">
-                                        <p>Bringing in the right blend of Automation with Manual testing with state of the art tools and technology in the market.</p>
+                                        <p>Bringing in the right blend of Automation with Manual testing with state of the art tools and technology in the market</p>
                                     </div>
                                 </div>    
 
                                 <div class="content tabflexdown" id="step5">
                                     <div class="wide401">
-                                        <h2 class="size-color-h2">Need more hands on deck, we got you</h2>
+                                        <h2 class="size-color-h2">Total QA Ownership</h2>
                                     </div>
                                     <div class="wide444px">
-                                        <p>Agile staff Augmentation - Hassle free up-scaling and down-scaling of resources as necessary.</p>
+                                        <p>From test strategy to release sign-off, we take full responsibility for quality</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="navigation_btns"></div>
                         <div class="slider-container9789">
                             <div class="slider765" id="slider2323">
                                 <!-- <div class="slide3242">1</div> -->
                                 <div class="slide3242">
                                     <img src="./software-testing/image/tabimg1.webp" class="imageee2334320" alt="Optimize your SDLC">
-                                    <h3 class="h3side">Optimize your SDLC</h3>
-                                    <p class="parah3side">Introducing test strategies to your SDLC to help reduce manpower, increase productivity & cut costs.</p>
+                                    <h3 class="h3side">Optimize your <br> SDLC</h3>
+                                    <p class="parah3side">Introducing smart test strategies into your SDLC to reduce effort by up to 30%, boost productivity by 40%, and cut release costs by nearly half</p>
                                 </div>
                                 <div class="slide3242">
                                     <img src="./software-testing/image/tabimg2.webp" class="imageee2334320" alt="Testing mapped to growth">
-                                    <h3 class="h3side">Testing mapped to growth</h3>
-                                        <p class="parah3side">Bringing in a PO, PM, and BA mindset to enhance test value by understanding its unique context.</p>
+                                    <h3 class="h3side">Testing mapped to <br> growth</h3>
+                                        <p class="parah3side">Bringing in a PO, PM, and BA mindset to enhance the test value of your product by understanding its unique context, ultimately leveraging testing as a growth engine</p>
                                     </div>
                                 <div class="slide3242">
                                     <img src="./software-testing/image/tabimg3.webp" class="imageee2334320" alt="Gathering product context">
-                                    <h3 class="h3side">Gathering product context</h3>
-                                        <p class="parah3side">Understanding the product, User, Tech, and KYC context before taking up any project.</p>
+                                    <h3 class="h3side">Gathering the right <br> context</h3>
+                                        <p class="parah3side">Understanding the Product, User, Tech and KYC context into our questioning framework before taking up any project or milestone</p>
                                     </div>
                                 <div class="slide3242">
                                     <img src="./software-testing/image/tabimg4.webp" class="imageee2334320" alt="Find the right blend">
-                                    <h3 class="h3side">Find the right blend</h3>
-                                        <p class="parah3side">Bringing in the right blend of Automation with Manual testing using cutting-edge tools.</p>
+                                    <h3 class="h3side">Find the right <br> blend</h3>
+                                        <p class="parah3side">Bringing in the right blend of Automation with Manual testing with state of the art tools and domain expertise</p>
                                     </div>
                                 <div class="slide3242">
-                                    <img src="./software-testing/image/tabimg5.webp" class="imageee2334320" alt="Need more hands on deck">
-                                    <h3 class="h3side">Need more hands on deck</h3>
-                                        <p class="parah3side">Agile staff Augmentation - Hassle-free up-scaling and down-scaling of resources.</p>
+                                    <img src="./software-testing/image/tabimg5.svg" class="imageee2334320" alt="Need more hands on deck">
+                                    <h3 class="h3side">Total QA Ownership</h3>
+                                        <p class="parah3side">From test strategy to release sign-off, we take full responsibility for quality</p>
                                     </div>
+                                    
                             </div>
                         </div>
+                        <div class="slider-dots-mobile no-desktop"></div>
+
 
                     </div>
                 </div>
@@ -1059,9 +1190,9 @@
     <section class="section5">
         <div class="container4">
             <div class="item-center">
-                <div class="center-alg1 no-padding-top pb-40">
-                    <h1 class="fnt-size2">Where<span class="color-purp"> QA </span>meets <span class="color-purp">Expertise</span></h1>
-                    <p class="txt-color">A comprehensive testing package for whatever your needs may be</p>
+                <div class="center-alg1 no-padding-top pb-40 no-padding-left no-padding-right">
+                    <h1 class="fnt-size2 no-padding-left no-padding-right">Where<span class="color-purp"> QA </span>meets <span class="color-purp">Expertise</span></h1>
+                    <p class="txt-color">Whatever your stack or industry, we’ve delivered</p>
                 </div>
                 
                 <div class="centerflex">
@@ -1080,7 +1211,7 @@
                                     <div class="slider">
                                         <div class="slide">                                
                                             <div class="slide-heading">
-                                                <h1 class="slide-head-new">Test Automation</h1>
+                                                <h1 class="slide-head-new">Test-Automation</h1>
                                             </div>
                                             <div class="img-with-txt">
                                                 <div class="imgtxt">
@@ -1238,7 +1369,7 @@
                                         <div class="slide">
                                             <!-- <img src="https://via.placeholder.com/300x200/3357FF/FFFFFF?text=3" alt="Slide 3"> -->
                                             <div class="slide-heading">
-                                                <h1 class="slide-head-new">Test Automation</h1>
+                                                <h1 class="slide-head-new">Mobile Testing</h1>
                                             </div>
                                             <div class="img-with-txt">
                                                 <div class="imgtxt">
@@ -1340,9 +1471,10 @@
                                         </div>
                                     </div>
                                     <div class="buttons">
-                                        <button id="prev" onclick="moveSlide(-1)">&#10094;</button>
-                                        <button id="next" onclick="moveSlide(1)">&#10095;</button>
+                                        <button id="prev" onclick="moveSlide(-1)">‹ </button>
+                                        <button id="next" onclick="moveSlide(1)">›</button>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="custom_tab no-desktop" id="custom-slider">
@@ -1351,7 +1483,7 @@
                                         API Testing
                                     </div>
                                     <div class="cus-tab-btn">
-                                        Test Automation
+                                        Test-Automation
                                     </div>
                                     <div class="cus-tab-btn">
                                         Performance Testing
@@ -1620,12 +1752,12 @@
                             </div>
 
 
-                            <div class="cont32centeralg">
+                            <!-- <div class="cont32centeralg">
                                 <div class="content32 desktophidecontent32">
                                     <img src="./software-testing/image/15thicon.webp" class="img50pximg" alt="">
                                     <p class="t-b-pad">Web3</p>
                                 </div>
-                            </div>
+                            </div> -->
 
 
                         </div>
@@ -1634,12 +1766,12 @@
                 </div>
             </div>
             
-            <div class="btncenter2 no-margin-bottom">
+            <!-- <div class="btncenter2 no-margin-bottom">
                 <div class="hero-form"> 
 
                     <form id="email-form-6" name="Email Form 2">
                         <div>
-                            <h3 class="email-form-heading" id="form-heading6">Enter your work email and schedule a call for priority support!</h3>
+                            <h3 class="email-form-heading" id="form-heading6">Enter your work-email and schedule a call for priority support!</h3>
                         
                             <div class="form-flex-down">
                             
@@ -1660,7 +1792,7 @@
                     <div id="thankYou" class="thankYou"></div>
                     
                 </div>
-            </div> 
+            </div>  -->
 
     
         
@@ -1675,24 +1807,29 @@
 
     <section class="section6" id="case_studies">
         <div class="container6" >
-            <div class="center-alg1 no-padding-top">
-                <h1 class="fnt-size2">Your victories, our <span class="color-purp">Celebrations</span></h1>
-                <p class="txt-color">Our customers’ landmarks are our goalposts. Wondering how we do it?</p>
+            <div class="center-alg1 no-padding-top no-padding-left no-padding-right">
+                <h1 class="fnt-size2">Your <span class="color-purp"> Victories,</span> Our Celebrations</h1>
+                <p class="txt-color">Our customer’s landmark are our goalposts, wondering how we do it?</p>
             </div>
 
             <div class="gallery-container">
                 <div class="gallery">
                     
-                    <a href="https://pages.qwilr.com/Hotstar-Standard-template-h3tyMo2fRSWy" class="a-div">
+                    <a href="./software-testing/image/Case Studies/Hotstar-Standard template (1).pdf" class="a-div">
                         <div class="gallery-item">
-                            <img src="./software-testing/image/section6 slider2img.webp" alt="Slide 2">
+                            <img src="./software-testing/image/jiohotstar-cs.png" alt="Slide 2">
                             <div class="imgcontainer21">
-                                <div class="bg-col-785dbf">
+                            <div class="bg-col-parent">
+                                <div class="bg-col-785dbf2">
                                     <p class="bg-col-p">OTT</p>
                                 </div>
+                                <div class="bg-col-EFE9FB">
+                                    <p class="bg-col-p2">2 Min Read</p>
+                                </div>
+                            </div>
 
                                 <div>
-                                    <h3 class="headingslder">Hitting Sixers with Hotstar</h3>
+                                    <h3 class="headingslder">JioHotstar</h3>
                                 </div>
                                 <div>
                                     <p class="subhead2">Over 12 million people tuned in to Hotstar to view the latest  India vs Pakistan match. Not only did this break...</p>
@@ -1708,16 +1845,21 @@
                         </div>
                     </a>
 
-                    <a href="https://pages.qwilr.com/PhonePe-Staff-Aug-Model-PmxKf8xhQi60" class="a-div">
+                    <a href="software-testing/image/Case Studies/PhonePe-Staff Aug .pdf" class="a-div">
                         <div class="gallery-item">
-                            <img src="./software-testing/image/section6 slider3img.webp" alt="Slide 3">
+                            <img src="./software-testing/image/phonepe-cs.png" alt="Slide 3">
                             <div class="imgcontainer21">
-                                <div class="bg-col-785dbf">
+                            <div class="bg-col-parent">
+                                <div class="bg-col-785dbf2">
                                     <p class="bg-col-p">BFSI</p>
                                 </div>
+                                <div class="bg-col-EFE9FB">
+                                    <p class="bg-col-p2">2 Min Read</p>
+                                </div>
+                            </div>
 
                                 <div>
-                                    <h3 class="headingslder">From bugs to bucks and more</h3>
+                                    <h3 class="headingslder">Phonepe</h3>
                                 </div>
                                 <div>
                                     <p class="subhead2">Moolya supported PhonePe to rapidly iterate new features that increased user adoption and enabled seamless transactions...</p>
@@ -1734,16 +1876,21 @@
                     </a>
 
 
-                    <a href="https://pages.qwilr.com/Myntra-Staff-Aug-Model-hpAfTsTkQRKn" class="a-div">
+                    <a href="./software-testing/image/Case Studies/Myntra-Staff Aug Model (1).pdf" class="a-div">
                         <div class="gallery-item">
-                            <img src="./software-testing/image/section7img4.webp" alt="Slide 4">
+                            <img src="./software-testing/image/myntra-cs.png" alt="Slide 4">
                             <div class="imgcontainer21">
+                            <div class="bg-col-parent">
                                 <div class="bg-col-785dbf2">
-                                    <p class="bg-col-p">E-commerce</p>
+                                    <p class="bg-col-p">E-Commerce</p>
                                 </div>
+                                <div class="bg-col-EFE9FB">
+                                    <p class="bg-col-p2">2 Min Read</p>
+                                </div>
+                            </div>
 
                                 <div>
-                                    <h3 class="headingslder">Clearing the Runway for Fashionable Features</h3>
+                                    <h3 class="headingslder">Myntra</h3>
                                 </div>
                                 <div>
                                     <p class="subhead2">Moolya helped Myntra to clear backlog automation scripts which freed the team to work on new...</p>
@@ -1762,17 +1909,22 @@
 
                     <a href="./software-testing/image/Case Studies/Flipkart (1).pdf" class="a-div">
                         <div class="gallery-item">
-                            <img src="./software-testing/image/section7img5.webp" alt="Slide 5">
+                            <img src="./software-testing/image/flipkart-cs.png" alt="Slide 5">
                             <div class="imgcontainer21">
+                            <div class="bg-col-parent">
                                 <div class="bg-col-785dbf2">
-                                    <p class="bg-col-p">E-commerce</p>
+                                    <p class="bg-col-p">E-Commerce</p>
                                 </div>
+                                <div class="bg-col-EFE9FB">
+                                    <p class="bg-col-p2">2 Min Read</p>
+                                </div>
+                            </div>
 
                                 <div>
-                                    <h3 class="headingslder">Breaking barriers with Flipkart</h3>
+                                    <h3 class="headingslder">Flipkart</h3>
                                 </div>
                                 <div>
-                                    <p class="subhead2">Every year millions of Indians move around for their work. Most times, we don’t know the language of that city. What works in our favour...</p>
+                                    <p class="subhead2">Moolya supported Flipkart in making their platform truly vernacular…so language would never block someone’s purchase.</p>
                                 </div>
 
                                 <div>
@@ -1789,15 +1941,20 @@
                         <div class="gallery-item">
                             <img src="./software-testing/image/section7img6.webp" alt="Slide 6">
                             <div class="imgcontainer21">
+                            <div class="bg-col-parent">
                                 <div class="bg-col-785dbf2">
-                                    <p class="bg-col-p">Quick commerce</p>
+                                    <p class="bg-col-p">E-Commerce</p>
                                 </div>
+                                <div class="bg-col-EFE9FB">
+                                    <p class="bg-col-p2">2 Min Read</p>
+                                </div>
+                            </div>
 
                                 <div>
-                                    <h3 class="headingslder">Learning with Foodpanda</h3>
+                                    <h3 class="headingslder">Foodpanda</h3>
                                 </div>
                                 <div>
-                                    <p class="subhead2">In this pandemic hit world, Foodpanda eased the process of food ordering and grocery shopping for people social distancing at home...</p>
+                                    <p class="subhead2">In this pandemic-hit world, Foodpanda eased the process of food and grocery shopping for people at home...</p>
                                 </div>
 
                                 <div>
@@ -1815,12 +1972,17 @@
                         <div class="gallery-item">
                             <img src="./software-testing/image/section6 slider1img.webp" alt="Slide 1">
                             <div class="imgcontainer21">
-                                <div class="bg-col-785dbf">
-                                    <p class="bg-col-p">Ad-Tech</p>
+                            <div class="bg-col-parent">
+                                <div class="bg-col-785dbf2">
+                                    <p class="bg-col-p">E-Commerce</p>
                                 </div>
+                                <div class="bg-col-EFE9FB">
+                                    <p class="bg-col-p2">2 Min Read</p>
+                                </div>
+                            </div>
 
                                 <div>
-                                    <h3 class="headingslder">Next-generation Customer Data Platform</h3>
+                                    <h3 class="headingslder">Zeotap</h3>
                                 </div>
                                 <div>
                                     <p class="subhead2">In this era of digitisation, data is the world’s most valuable resource. That is why companies like...</p>
@@ -1839,11 +2001,11 @@
                 </div>
                 <div class="controls">
                     <button id="prev-slide" class="ctrl-btn" onclick="moveGallery(-1)">
-                        &#10094;
+                        ‹
                         
                     </button>
                     <button id="next-slide" class="ctrl-btn" onclick="moveGallery(1)">
-                        &#10095;
+                        ›
                     </button>
                 </div>
                 <div class="dots-container12" id="dots-container12"></div>
@@ -1852,16 +2014,21 @@
             <div class="zoom_slider no-desktop" id="zoom_slider">
                 <div class="mask">
                     <div class="zoom_slide active">
-                        <a href="https://pages.qwilr.com/Hotstar-Standard-template-h3tyMo2fRSWy" class="a-div">
+                        <a href="./software-testing/image/Case Studies/Hotstar-Standard template (1).pdf" class="a-div">
                             <div class="gallery-item">
-                                <img src="./software-testing/image/section6 slider2img.webp" alt="Slide 2">
+                                <img src="./software-testing/image/jiohotstar-cs.png" alt="Slide 2">
                                 <div class="imgcontainer21">
-                                    <div class="bg-col-785dbf">
-                                        <p class="bg-col-p">OTT</p>
+                                    <div class="bg-col-parent">
+                                        <div class="bg-col-785dbf">
+                                            <p class="bg-col-p">OTT</p>
+                                        </div>
+                                        <div class="bg-col-EFE9FB">
+                                            <p class="bg-col-p2">2 Min Read</p>
+                                        </div>
                                     </div>
                 
                                     <div>
-                                        <h3 class="headingslder">Hitting Sixers with Hotstar</h3>
+                                        <h3 class="headingslder">JioHotstar</h3>
                                     </div>
                                     <div>
                                         <p class="subhead2">Over 12 million people tuned in to Hotstar to view the latest  India vs Pakistan match. Not only did this break...</p>
@@ -1879,19 +2046,24 @@
                     </div>
 
                     <div class="zoom_slide">
-                        <a href="https://pages.qwilr.com/PhonePe-Staff-Aug-Model-PmxKf8xhQi60" class="a-div">
+                        <a href="./software-testing/image/Case Studies/PhonePe-Staff Aug .pdf" class="a-div">
                             <div class="gallery-item">
-                                <img src="./software-testing/image/section6 slider3img.webp" alt="Slide 3">
+                                <img src="./software-testing/image/phonepe-cs.png" alt="Slide 3">
                                 <div class="imgcontainer21">
-                                    <div class="bg-col-785dbf">
-                                        <p class="bg-col-p">BFSI</p>
+                                    <div class="bg-col-parent">
+                                        <div class="bg-col-785dbf">
+                                            <p class="bg-col-p">BFSI</p>
+                                        </div>
+                                        <div class="bg-col-EFE9FB">
+                                            <p class="bg-col-p2">2 Min Read</p>
+                                        </div>
                                     </div>
                 
                                     <div>
-                                        <h3 class="headingslder">From bugs to bucks and more</h3>
+                                        <h3 class="headingslder">PhonePe</h3>
                                     </div>
                                     <div>
-                                        <p class="subhead2">Moolya supported PhonePe to rapidly iterate new features that increased user adoption and enabled seamless transactions...</p>
+                                        <p class="subhead2">Moolya supported PhonePe to rapidly iterate new features that increased user adoption and enabled...</p>
                                     </div>
                 
                                     <div>
@@ -1906,16 +2078,21 @@
                     </div>
 
                     <div class="zoom_slide">
-                        <a href="https://pages.qwilr.com/Myntra-Staff-Aug-Model-hpAfTsTkQRKn" class="a-div">
+                        <a href="./software-testing/image/Case Studies/Myntra-Staff Aug Model (1).pdf" class="a-div">
                             <div class="gallery-item">
-                                <img src="./software-testing/image/section7img4.webp" alt="Slide 4">
+                                <img src="./software-testing/image/myntra-cs.png" alt="Slide 4">
                                 <div class="imgcontainer21">
-                                    <div class="bg-col-785dbf2">
-                                        <p class="bg-col-p">E-commerce</p>
+                                      <div class="bg-col-parent">
+                                        <div class="bg-col-785dbf">
+                                            <p class="bg-col-p">E-Commerce</p>
+                                        </div>
+                                        <div class="bg-col-EFE9FB">
+                                            <p class="bg-col-p2">2 Min Read</p>
+                                        </div>
                                     </div>
                 
                                     <div>
-                                        <h3 class="headingslder">Clearing the Runway for Fashionable Features</h3>
+                                        <h3 class="headingslder">Myntra</h3>
                                     </div>
                                     <div>
                                         <p class="subhead2">Moolya helped Myntra to clear backlog automation scripts which freed the team to work on new...</p>
@@ -1931,21 +2108,27 @@
                             </div>
                         </a>
                     </div>
+
                     
                     <div class="zoom_slide">
                         <a href="./software-testing/image/Case Studies/Flipkart (1).pdf" class="a-div">
                             <div class="gallery-item">
-                                <img src="./software-testing/image/section7img5.webp" alt="Slide 5">
+                                <img src="./software-testing/image/flipkart-cs.png" alt="Slide 5">
                                 <div class="imgcontainer21">
-                                    <div class="bg-col-785dbf2">
-                                        <p class="bg-col-p">E-commerce</p>
+                                    <div class="bg-col-parent">
+                                        <div class="bg-col-785dbf">
+                                            <p class="bg-col-p">E-commerce</p>
+                                        </div>
+                                        <div class="bg-col-EFE9FB">
+                                            <p class="bg-col-p2">2 Min Read</p>
+                                        </div>
                                     </div>
             
                                     <div>
-                                        <h3 class="headingslder">Breaking barriers with Flipkart</h3>
+                                        <h3 class="headingslder">Flipkart</h3>
                                     </div>
                                     <div>
-                                        <p class="subhead2">Every year millions of Indians move around for their work. Most times, we don’t know the language of that city. What works in our favour...</p>
+                                        <p class="subhead2">Moolya supported Flipkart in making their platform truly vernacular…so language would never block someone’s purchase.</p>
                                     </div>
             
                                     <div>
@@ -1965,15 +2148,20 @@
                             <div class="gallery-item">
                                 <img src="./software-testing/image/section7img6.webp" alt="Slide 6">
                                 <div class="imgcontainer21">
-                                    <div class="bg-col-785dbf2">
-                                        <p class="bg-col-p">Quick commerce</p>
+                                    <div class="bg-col-parent">
+                                        <div class="bg-col-785dbf">
+                                            <p class="bg-col-p">E-commerce</p>
+                                        </div>
+                                        <div class="bg-col-EFE9FB">
+                                            <p class="bg-col-p2">2 Min Read</p>
+                                        </div>
                                     </div>
             
                                     <div>
-                                        <h3 class="headingslder">Learning with Foodpanda</h3>
+                                        <h3 class="headingslder">Foodpanda</h3>
                                     </div>
                                     <div>
-                                        <p class="subhead2">In this pandemic hit world, Foodpanda eased the process of food ordering and grocery shopping for people social distancing at home...</p>
+                                        <p class="subhead2">In this pandemic hit world, Foodpanda eased the process of food ordering and grocery shopping for...</p>
                                     </div>
             
                                     <div>
@@ -1990,14 +2178,19 @@
                     <div class="zoom_slide">
                         <a href="./software-testing/image/Case Studies/Zeotap (1).pdf" class="a-div">
                             <div class="gallery-item">
-                                <img src="./software-testing/image/section6 slider1img.webp" alt="Slide 1">
+                                <img src="./software-testing/image/zeotap-cs.png" alt="Slide 1">
                                 <div class="imgcontainer21">
-                                    <div class="bg-col-785dbf">
-                                        <p class="bg-col-p">Ad-Tech</p>
+                                    <div class="bg-col-parent">
+                                        <div class="bg-col-785dbf">
+                                            <p class="bg-col-p">Ad-Tech</p>
+                                        </div>
+                                        <div class="bg-col-EFE9FB">
+                                            <p class="bg-col-p2">2 Min Read</p>
+                                        </div>
                                     </div>
             
                                     <div>
-                                        <h3 class="headingslder">Next-generation Customer Data Platform</h3>
+                                        <h3 class="headingslder">Zeotap</h3>
                                     </div>
                                     <div>
                                         <p class="subhead2">In this era of digitisation, data is the world’s most valuable resource. That is why companies like...</p>
@@ -2015,8 +2208,10 @@
                     </div>
 
                 </div>
-                <button class="slider-btn left" id="slideLeft">&#10094;</button>
-                <button class="slider-btn right" id="slideRight">&#10095;</button>
+                <div class="no-mobile">
+                    <button class="slider-btn left" id="slideLeft">&#10094;</button>
+                    <button class="slider-btn right" id="slideRight">&#10095;</button>
+                </div>
                 <div class="navigation_btns"></div>
             </div>
             <div class="btncenter2 no-margin-bottom">
@@ -2024,7 +2219,7 @@
 
                     <form id="email-form-7" name="Email Form 2">
                         <div>
-                            <h3 class="email-form-heading" id="form-heading7">Enter your work email and schedule a call for priority support!</h3>
+                            <h3 class="email-form-heading" id="form-heading7">Enter your work-email and schedule a call for priority support!</h3>
                         
                             <div class="form-flex-down">
                             
@@ -2062,8 +2257,8 @@
     <section class="section7">
         <div class="container7">
             <div class="center-alg1 no-padding-top">
-                <h1 class="fnt-size2">Where<span class="color-purp"> QA </span>meets <span class="color-purp">Expertise</span></h1>
-                <p class="txt-color">A comprehensive testing package for whatever your needs may be</p>
+                <h1 class="fnt-size2"><span class="color-purp"> Trusted </span> by Tech Leaders <span class="color-purp"></span></h1>
+                <p class="txt-color">How teams improved quality with us</p>
             </div>
             <div class="no_desk">
                 <div class="maindivyoutuberediction">
@@ -2096,7 +2291,7 @@
                                     <div class="img-txt-cont-div">
                                         <div class="para-div-inside">
                                             <p class="ptaghead">Maynak Dikshit</p>
-                                            <p class="ptaghead2">Director - Quality Engineering - Mindtickle</p>
+                                            <p class="ptaghead2">Director, Quality Engineering - Mindtickle</p>
                                         </div>
                 
                 
@@ -2109,8 +2304,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="slider-btn left l1" id="slideLeft">&#10094;</button>
-                        <button class="slider-btn right r1" id="slideRight">&#10095;</button>
+                        <div class="no-mobile">
+                            <button class="slider-btn left l1" id="slideLeft">&#10094;</button>
+                            <button class="slider-btn right r1" id="slideRight">&#10095;</button>
+                        </div>
                         <div class="navigation_btns"></div>
                     </div>
                 </div>
@@ -2142,7 +2339,7 @@
                         <div class="img-txt-cont-div">
                             <div class="para-div-inside">
                                 <p class="ptaghead">Maynak Dikshit</p>
-                                <p class="ptaghead2">Director - Quality Engineering - Mindtickle</p>
+                                <p class="ptaghead2">Director, Quality Engineering - Mindtickle</p>
                             </div>
     
     
@@ -2160,12 +2357,191 @@
         </div>
     </section>
 
+    <section class="section9" id="testimonials">
+        <div class="container9">
+            <div class="mainSliderWrapper">
+                <div class="slider-container23">
+                    <div class="testimonial-slider">
+    
+                        <div class="testimonial">
+                            <div class="testmoin1 testim-desktop-hide">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <div class="testimonial-img-des-wrap">
+                                        <img src="./software-testing/image/ceo.webp" class="img93 no-desktop" alt="">
+                                        <p class="paratestmoin"><em>Moolya helped in preventing bugs going into a major release </em> </p>
+                                    </div>
+                                    <p class="h3slider">Tomi Schütz,<span> <em>CTO</em></span> </p>
+                                    
+                                    <!-- <div class="borderimgdiv">
+                                        <img src="./software-testing/image/endimg2.webp" class="img92" 3alt="">
+                                    </div> -->
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/ceo.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                            <div class="testmoin1 no-mobile">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <img src="./software-testing/image/ceo.webp" class="img93 no-desktop" alt="">
+                                    <p class="h3slider">Tomi Schütz,<span> CTO</span> </p>
+                                    
+                                    <p class="paratestmoin">Moolya helped in preventing bugs going into a major release</p>
+                                    <div class="borderimgdiv">
+                                        <img src="./software-testing/image/endimg2.webp" class="img92" 3alt="">
+                                    </div>
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/ceo.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                        </div>
+
+
+
+                        <div class="testimonial">
+                            <div class="testmoin1 testim-desktop-hide">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <div class="testimonial-img-des-wrap">
+                                        <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93 no-desktop" alt="">
+                                        <p class="paratestmoin"> <em> Moolya is a partner to my entrepreneurial journey for over a decade </em></p>
+                                    </div>
+                                    
+                                    
+                                    <!-- <div class="borderimgdiv">
+                                        <img src="./software-testing/image/6PhonePe.webp" class="img92" 3alt="">
+                                    </div> -->
+                                    <p class="h3slider">Rahul Chari, <span><em>Co-Founder & CTO PhonePe </em></span> </p>
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93" alt="">
+                                </div>
+                            </div>   
+                            
+                              <div class="testmoin1 no-mobile">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93 no-desktop" alt="">
+                                    <p class="h3slider">Rahul Chari, <span>Co-Founder & CTO</span> </p>
+                                    
+                                    <p class="paratestmoin">Moolya is a partner to my entrepreneurial journey for over a decade</p>
+                                    <div class="borderimgdiv">
+                                        <img src="./software-testing/image/6PhonePe.webp" class="img92" 3alt="">
+                                    </div>
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/Co-Founder & CTO.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                        </div>
+
+
+
+
+                        <div class="testimonial">
+                            <div class="testmoin1 testim-desktop-hide">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <div class="testimonial-img-des-wrap">
+                                        <img src="./software-testing/image/program director.webp" class="img93 no-desktop" alt="">
+                                        <p class="paratestmoin"> <em>Moolya brought in CDT approach to Testing and made a large banking transformation go smooth</em> </p>
+                                    </div>
+                                    <p class="h3slider">Huib Schoots,<span><em> Program Director </em></span> </p>
+                                    
+                                    <!-- <div class="borderimgdiv">
+                                        <img src="./software-testing/image/rabobank.webp" class="img92" 3alt="">
+                                    </div>     -->
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/program director.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                             <div class="testmoin1 no-mobile">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <img src="./software-testing/image/program director.webp" class="img93 no-desktop" alt="">
+                                    <p class="h3slider">Huib Schoots,<span> Program Director</span> </p>
+                                    
+                                    <p class="paratestmoin">Moolya brought in CDT approach to Testing and made a large banking transformation go smooth</p>
+                                    <div class="borderimgdiv">
+                                        <img src="./software-testing/image/rabobank.webp" class="img92" 3alt="">
+                                
+                                    </div>    
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/program director.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                        </div>
+
+
+                        <div class="testimonial">
+                            <div class="testmoin1 testim-desktop-hide">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <div class="testimonial-img-des-wrap"> 
+                                        <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93 no-desktop" alt="">
+                                        <p class="paratestmoin"><em>Moolya helped prevent bugs slipping into our users by bringing in a unique value</em> </p>
+                                    </div>
+                                    <p class="h3slider">Natarajan Alagappan (Nattu),<span> <em>  ‍Head of Engineering & Technology </em> </span> </p>
+                                    
+                                    <!-- <div class="borderimgdiv">
+                                        <img src="./software-testing/image/tescoimg.webp" class="img94" 3alt="">
+                                    </div> -->
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                            <div class="testmoin1 no-mobile">
+                                <div class="testmoin2">
+                                    <img src="./software-testing/image/topimg1.webp" class="img91" alt="User">
+                                    <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93 no-desktop" alt="">
+                                    <p class="h3slider">Natarajan Alagappan (Nattu),<span> ‍Head of Engineering & Technology</span> </p>
+                                    
+                                    <p class="paratestmoin">Moolya helped prevent bugs slipping into our users by bringing in a unique value</p>
+                                    <div class="borderimgdiv">
+                                        <img src="./software-testing/image/tescoimg.webp" class="img94" 3alt="">
+                                    </div>
+                                </div>
+                                <div class="no-mobile">
+                                    <img src="./software-testing/image/Head of Engineering & Technology.webp" class="img93" alt="">
+                                </div>
+                            </div>    
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="">
+                        <button class="slider-btn left" id="slideLeft">&#10094;</button>
+                        <button class="slider-btn right" id="slideRight">&#10095;</button>
+                    </div>
+                    <div class="slider-dot-container"></div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
 
     <section class="section8" id="Clientele">
         <div class="container8">
             <div class="center-alg1 no-padding-top">
-                <h1 class="fnt-size2">What Does Moolya’s <span class="color-purp">Clientele</span> Look Like?</h1>
-                <p class="txt-color">Scalable and innovative software testing solutions for clients across all industries.</p>
+                <h1 class="fnt-size2">
+                    What Does Moolya’s
+                    <span class="mobile-break"></span>
+                    <span class="color-purp">Clientele</span> Look Like?
+                </h1>
+                <p class="txt-color">Scalable and innovative software testing solutions for clients across all industries</p>
             </div>
 
             <div class="flex-tab4523 no">
@@ -2334,7 +2710,7 @@
                             <img src="./software-testing/image/Ecommerce-mob-12-8-25/fynd.webp" alt="">
                             <img src="./software-testing/image/Ecommerce-mob-12-8-25/avysh.webp" alt="">
                             <img src="./software-testing/image/Ecommerce-mob-12-8-25/foodpanda.webp" alt="">
-                            <img src="./software-testing/image/Ecommerce-mob-12-8-25/sapna.webp" alt="">
+                            
                             <img src="./software-testing/image/Ecommerce-mob-12-8-25/tata-cliq.webp" alt="">
                         </div>
                         <div class="imgcontainerinside">
@@ -2367,14 +2743,14 @@
                 </div>
                 <!-- Manufacturing -->
                 <div id="manufacturing" class="logo-container">
-                    <div class="imgcontainer">
-                        <div class="imgcontainerinside">
+                    <div class="imgcontainer">"
+                        <div class="imgcontainerinside no-gap">
                             <img src="./software-testing/image/Manufacturing-mob-12-8-25/falconbrick.webp" alt="">
                             <img src="./software-testing/image/Manufacturing-mob-12-8-25/contus-tech.webp" alt="">
                             <img src="./software-testing/image/Manufacturing-mob-12-8-25/scheider.webp" alt="">
                             <!-- <img src="./software-testing/image/manufacturing/drishti_logo_new.webp" alt=""> -->
                         </div>
-                        <div class="imgcontainerinside">
+                        <div class="imgcontainerinside no-gap">
 
                             <img src="./software-testing/image/Manufacturing-mob-12-8-25/leucine.webp" alt="">
                             <img src="./software-testing/image/Manufacturing-mob-12-8-25/trianz.webp" alt="">
@@ -2385,7 +2761,7 @@
                 <!-- Telecommunications -->
                 <div id="telecommunication" class="logo-container">
                     <div class="imgcontainer">
-                        <div class="imgcontainerinside">
+                        <div class="imgcontainerinside no-gap20">
                             <img src="./software-testing/image/Telecommunication-mob-12-8-25/amagi.webp" alt="">
                             <!-- <img src="./software-testing/image/telecommunications/Logo 14.webp" alt=""> -->
                             <img src="./software-testing/image/Telecommunication-mob-12-8-25/sun-nxt.webp" alt="">
@@ -2405,9 +2781,10 @@
                 <!-- retail -->
                 <div id="retail" class="logo-container">
                     <div class="imgcontainer">
-                        <div class="imgcontainerinside center">
-                            <img src="./software-testing/image/Retail-mob-12-8-25/mooo-farm.webp" class="logos-big" alt="">
-                            <img src="./software-testing/image/Retail-mob-12-8-25/tiekled-media.webp" class="logos-big" alt="">
+                        <div class="imgcontainerinside center no-gap">
+                            <img src="./software-testing/image/Ecommerce-mob-12-8-25/sapna.webp" alt="">
+                            <img src="./software-testing/image/Retail-mob-12-8-25/moofarm.webp" class="logos-big" alt="">
+                            <img src="./software-testing/image/Retail-mob-12-8-25/tickled.webp" class="logos-big" alt="">
                             <img src="./software-testing/image/Retail-mob-12-8-25/homeland.webp" class="logos-big" alt="">
                         </div>
                     </div>
@@ -2507,7 +2884,7 @@
                             <div class="itemcenter">
                                 <h2>Healthcare</h2>
                             </div>
-                            <div class="gridmask vertical">
+                            <div class="gridmask img126width vertical">
                                 <img src="./software-testing/image/Healthcare-mob-12-8-25/fourth-frontier.webp" alt="">
                                 <img src="./software-testing/image/Healthcare-mob-12-8-25/cloudnine.webp" alt="">
                                 <img src="./software-testing/image/Healthcare-mob-12-8-25/ekincare.webp" alt="">
@@ -2527,7 +2904,7 @@
                     <div class="zoom_slide">
                         <div class="imgcontainer65">
                             <div class="itemcenter">
-                                <h2>E-commerce</h2>
+                                <h2>E-comm and Q-comm</h2>
                             </div>
                             <div class="gridmask vertical">
                                 <!-- <img src="./software-testing/image/Ecommerce-mob-12-8-25/blinkit.webp" class="wideimg200" alt="">
@@ -2545,7 +2922,7 @@
                                 <img src="./software-testing/image/Ecommerce-mob-12-8-25/fynd.webp" alt="">
                                 <img src="./software-testing/image/Ecommerce-mob-12-8-25/avysh.webp" alt="">
                                 <img src="./software-testing/image/Ecommerce-mob-12-8-25/foodpanda.webp" alt="">
-                                <img src="./software-testing/image/Ecommerce-mob-12-8-25/sapna.webp" alt="">
+                                
                                 <img src="./software-testing/image/Ecommerce-mob-12-8-25/tata-cliq.webp" alt="">
                                 <img src="./software-testing/image/Ecommerce-mob-12-8-25/myntra.webp" alt="">
                                 <img src="./software-testing/image/Ecommerce-mob-12-8-25/sephora.webp" alt="">
@@ -2579,9 +2956,9 @@
                     <div class="zoom_slide">
                         <div class="imgcontainer65">
                             <div class="itemcenter">
-                                <h2>Manufacturing</h2>
+                                <h2>Industrial Automation</h2>
                             </div>
-                            <div class="gridmask vertical">
+                            <div class="gridmask vertical img126width">
                                 <img src="./software-testing/image/Manufacturing-mob-12-8-25/falconbrick.webp"alt="">
                                 <img src="./software-testing/image/Manufacturing-mob-12-8-25/contus-tech.webp"alt="">
                                 <!-- <img src="./software-testing/image/manufacturing/drishti_logo_new.webp"alt=""> -->
@@ -2618,8 +2995,9 @@
                                 <h2>Retail</h2>
                             </div>
                             <div class="gridmask vertical">
-                                <img src="./software-testing/image/Retail-mob-12-8-25/mooo-farm.webp" alt="">
-                                <img src="./software-testing/image/Retail-mob-12-8-25/tiekled-media.webp" alt="">
+                                <img src="./software-testing/image/Ecommerce-mob-12-8-25/sapna.webp" alt="">
+                                <img src="./software-testing/image/Retail-mob-12-8-25/moofarm.webp" alt="">
+                                <img src="./software-testing/image/Retail-mob-12-8-25/tickled.webp" alt="">
                                 <img src="./software-testing/image/Retail-mob-12-8-25/homeland.webp" alt="">
                             </div>
                             <div class="itemcenter">
@@ -2663,18 +3041,20 @@
 
 
                 </div>
-                <button class="slider-btn left" id="slideLeft">&#10094;</button>
-                <button class="slider-btn right" id="slideRight">&#10095;</button>
+                <div class="no-mobile">
+                    <button class="slider-btn left" id="slideLeft">&#10094;</button>
+                    <button class="slider-btn right" id="slideRight">&#10095;</button>
+                </div>
                 <div class="navigation_btns"></div>
             </div>
 
-            <div class="btncenter2 no-margin-bottom">
+            <div class="btncenter2 no-margin-bottom slider-margin-top">
                 <!-- <button class="btn23 cta-click" id="btn-7">Talk to an Expert</button> -->
                 <div class="hero-form"> 
 
                     <form id="email-form-8" name="Email Form 8">
                         <div>
-                            <h3 class="email-form-heading" id="form-heading8">Enter your work email and schedule a call for priority support!</h3>
+                            <h3 class="email-form-heading" id="form-heading8">Enter your work-email and schedule a call for priority support!</h3>
                         
                             <div class="form-flex-down">
                             
@@ -2703,7 +3083,7 @@
     </section>
 
 
-    <section class="section9" id="testimonials">
+    <!-- <section class="section9" id="testimonials">
         <div class="container9">
             <div class="mainSliderWrapper">
                 <div class="slider-container23">
@@ -2791,11 +3171,15 @@
 
 
                     </div>
+                    <div class="no-desktop">
+                        <button class="slider-btn left" id="slideLeft">&#10094;</button>
+                        <button class="slider-btn right" id="slideRight">&#10095;</button>
+                    </div>
                     <div class="slider-dot-container"></div>
                 </div>
             </div>    
         </div>
-    </section>
+    </section> -->
 
 
     <section class="section10">
@@ -2809,7 +3193,7 @@
 
                             <form id="email-form-9" name="Email Form 2">
                                 <div>
-                                    <h3 class="email-form-heading white" id="form-heading9">Enter your work email and schedule a call for priority support!</h3>
+                                    <h3 class="email-form-heading white" id="form-heading9">Enter your work-email and schedule a call for priority support!</h3>
                                 
                                     <div class="form-flex-down">
                                     
@@ -2819,7 +3203,7 @@
                                         </div>
                                         
                                         <div class="center-alg">
-                                            <button class="btn2" id="submit-btn9">Talk to an Expert</button>
+                                            <button class="btn2" id="submit-btn9">TALK TO OUR EXPERT</button>
                                         </div>
             
                                     </div>
@@ -2833,7 +3217,7 @@
                     </div>  
                 </div>
                 <div class="rightcont">
-                    <img src="./software-testing/image/footer-img.webp" class="img23">
+                    <img src="./software-testing/image/footer-img.webp" width="534" height="370" class="img23">
                 </div>
             
             </div>
@@ -2854,36 +3238,89 @@
                 </div>
 
                 <div class="fw-block-center">
-                    <a href="#faqsec" class="fw-a no-desktop">Our Services</a>
-                    <a href="#flip-card" class="fw-a no-mobile">Our Services</a>
-                    <a href="#why-us" class="fw-a">Why us?</a>
-                    <a href="#case_studies" class="fw-a">Case studies</a>
-                    <a href="#testimonials" class="fw-a">Testimonials</a>
+                        <a href="#faqsec" class="fw-a no-desktop">Our Services</a>
+                        <a href="#flip-card" class="fw-a no-mobile">Our Services</a>
+                        <a href="#why-us" class="fw-a">Why Us</a>
+                        <a href="#engagement_models" class="fw-a">Engagement Models</a>
+                        <a href="#case_studies" class="fw-a">Case-Studies</a>
+                        <a href="#Clientele" class="fw-a">Our Customers</a>
+                        <a href="#testimonials" class="fw-a">Testimonials</a>
                 </div>
+
+                 <!-- <div class="fw-block-center">
+                    <div class="fw-block-center1">
+                        <a href="#faqsec" class="fw-a no-desktop">our services</a>
+                        <a href="#flip-card" class="fw-a no-mobile">Our Services</a>
+                        <a href="#why-us" class="fw-a">Why Us</a>
+                        <a href="#testimonials" class="fw-a">Engagement Models</a>
+                    </div>
+                    <div class="fw-block-center2">
+                        <a href="#case_studies" class="fw-a">Case-Studies</a>
+                        <a href="#testimonials" class="fw-a">Testimonials</a>
+                    </div>
+                </div>
+                 -->
 
                 <div class="fw-block-right">
-
-                    <a href="tel:+919606988253" class="fw-phone">
-                        <div class="fw-contact">
-                            <img alt="phone" src="./software-testing/image/phone.webp" loading="lazy" class="fw-icon">
-                            <div class="fw-phone-text">
-                                +91 9606988253
-                                <span class="fw-span">
-                                    (Talk To Sales)
-                                </span>
+                  <div class="contact-parent">
+                      <a href="tel:+919606988253" class="fw-phone">
+                          <div class="fw-contact">
+                              <img alt="phone" src="./software-testing/image/phone.webp" loading="lazy" class="fw-icon">
+                              <div class="fw-phone-text">
+                                  +91 9606988253
+                                  <span class="fw-span">
+                                      (Talk To Sales)
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-
-                    <a href="mailto:sales@moolya.com" class="fw-mail">
-                        <div class="fw-contact">
-                            <img alt="mail" src="./software-testing/image/mail.png" loading="lazy" class="fw-icon">
-                            <div class="fw-mail-text">
-                                sales@moolya.com
+                        </a>
+                        
+                        <a href="mailto:sales@moolya.com" class="fw-mail">
+                            <div class="fw-contact">
+                                <img alt="mail" src="./software-testing/image/mail.png" loading="lazy" class="fw-icon">
+                                <div class="fw-mail-text">
+                                    sales@moolya.com
+                                </div>
                             </div>
+                        </a>
+                    </div>
+
+                    <div class="blocks-flex">
+
+                        <div class="block-text-div">
+                            <p class="color-grey p">We are recognized by</p>
                         </div>
-                    </a>
+
+                        <div class="flex-row1 footer-flexrow1">
+
+                            <div class="image1 footer-img1">
+                                <img class="image1 footer-img1"
+                                    src="./software-testing/image/rec-1.webp"
+                                    alt="">
+                            </div>
+
+                            <div class="image1 footer-img1">
+                                <img class="image1 footer-img1"
+                                    src="./software-testing/image/rec-2.webp" alt="">
+                            </div>
+
+                            <div class="image1 footer-img1">
+                                <img class="image1 footer-img1"
+                                    src="./software-testing/image/rec-3.webp" alt="">
+                            </div>
+
+                            <div class="image1 your-story-icon footer-img1">
+                                <img class="image1 your-story-icon footer-img1"
+                                    src="./software-testing/image/your-story.svg" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
                 </div>
+                
 
             </div>
 
@@ -2900,191 +3337,203 @@
 </div>
 
 
-<script src="./software-testing/script.js"></script>
+<script src="./script.js"></script>
 
 
 <!-- jQuery Library (must be loaded first) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    let gmail=false
+    let gmail = false;
+    
     $(document).ready(function() {
-    function checkEmail(emailField, errorTextId) {   
-        var email = emailField.val().trim(); // Trim to avoid spaces
-        var reg = /^[\w-.]+@(?!gmail\.com$|gmail.co$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
+        function checkEmail(emailField, errorTextId) {   
+            var email = emailField.val().trim();
+            var reg = /^[\w-.]+@(?!gmail\.com$|gmail.co$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
 
-        var errorText = $('#' + errorTextId); // Use jQuery for consistency
+            var errorText = $('#' + errorTextId);
 
-        if (reg.test(email)) {
-            // errorText.hide(); 
-            //return true;  
-            gmail = false
-        } else {
-            //errorText.show(); // Show error text
-            //return false; // Email is invalid
-            gmail = true;
+            if (reg.test(email)) {
+                errorText.hide(); 
+                gmail = false;
+                return true;  
+            } else {
+                errorText.show();
+                gmail = true;
+                return false;
+            }
         }
-    }
 
-    $('#submit-btn').click(function(event) {
-        // if (!checkEmail($('#email'), 'error-text')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email'), 'error-text')
+        // Email validation for all forms
+        $('#submit-btn').click(function(event) {
+            if (!checkEmail($('#email'), 'error-text')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email'), 'error-text');
+        });
+
+        $('#email').on('input', function() {
+            checkEmail($(this), 'error-text');
+        });
+
+        $('#submit-btn3').click(function(event) {
+            if (!checkEmail($('#email3'), 'error-text3')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email3'), 'error-text3');
+        });
+
+        $('#email3').on('input', function() {
+            checkEmail($(this), 'error-text3');
+        });
+
+        $('#submit-btn4').click(function(event) {
+            if (!checkEmail($('#email4'), 'error-text4')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email4'), 'error-text4');
+        });
+
+        $('#email4').on('input', function() {
+            checkEmail($(this), 'error-text4');
+        });
+
+        $('#submit-btn5').click(function(event) {
+            if (!checkEmail($('#email5'), 'error-text5')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email5'), 'error-text5');
+        });
+
+        $('#email5').on('input', function() {
+            checkEmail($(this), 'error-text5');
+        });
+
+        $('#submit-btn6').click(function(event) {
+            if (!checkEmail($('#email6'), 'error-text6')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email6'), 'error-text6');
+        });
+
+        $('#email6').on('input', function() {
+            checkEmail($(this), 'error-text6');
+        });
+
+        $('#submit-btn7').click(function(event) {
+            if (!checkEmail($('#email7'), 'error-text7')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email7'), 'error-text7');
+        });
+
+        $('#email7').on('input', function() {
+            checkEmail($(this), 'error-text7');
+        });
+
+        $('#submit-btn8').click(function(event) {
+            if (!checkEmail($('#email8'), 'error-text8')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email8'), 'error-text8');
+        });
+
+        $('#email8').on('input', function() {
+            checkEmail($(this), 'error-text8');
+        });
+
+        $('#submit-btn9').click(function(event) {
+            if (!checkEmail($('#email9'), 'error-text9')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email9'), 'error-text9');
+        });
+
+        $('#email9').on('input', function() {
+            checkEmail($(this), 'error-text9');
+        });
+
+        $('#submit-btn10').click(function(event) {
+            if (!checkEmail($('#email10'), 'error-text10')) {
+                event.preventDefault();
+            }
+            checkEmail($('#email10'), 'error-text10');
+        });
+
+        $('#email10').on('input', function() {
+            checkEmail($(this), 'error-text10');
+        });
     });
-
-    $('#email').on('input', function() {
-        checkEmail($(this), 'error-text'); // Re-check on input change
-    });
-
-
-    $('#submit-btn3').click(function(event) {
-        // if (!checkEmail($('#email3'), 'error-text3')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email3'), 'error-text3')
-    });
-
-    $('#email3').on('input', function() {
-        checkEmail($(this), 'error-text3'); // Re-check on input change
-    });
-
-    $('#submit-btn4').click(function(event) {
-        // if (!checkEmail($('#email4'), 'error-text4')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email4'), 'error-text4')
-    });
-
-    $('#email4').on('input', function() {
-        checkEmail($(this), 'error-text4'); // Re-check on input change
-    });
-
-    $('#submit-btn5').click(function(event) {
-        // if (!checkEmail($('#email5'), 'error-text5')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email5'), 'error-text5')
-    });
-
-    $('#email5').on('input', function() {
-        checkEmail($(this), 'error-text5'); // Re-check on input change
-    });
-
-    $('#submit-btn6').click(function(event) {
-        // if (!checkEmail($('#email6'), 'error-text6')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email6'), 'error-text6')
-    });
-
-    $('#email6').on('input', function() {
-        checkEmail($(this), 'error-text6'); // Re-check on input change
-    });
-
-    $('#submit-btn7').click(function(event) {
-        // if (!checkEmail($('#email7'), 'error-text7')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email7'), 'error-text7')
-    });
-
-    $('#email7').on('input', function() {
-        checkEmail($(this), 'error-text7'); // Re-check on input change
-    });
-
-    $('#submit-btn8').click(function(event) {
-        // if (!checkEmail($('#email8'), 'error-text8')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email8'), 'error-text8')
-    });
-
-    $('#email8').on('input', function() {
-        checkEmail($(this), 'error-text8'); // Re-check on input change
-    });
-
-    $('#submit-btn9').click(function(event) {
-        // if (!checkEmail($('#email9'), 'error-text9')) {
-        //     event.preventDefault();  // Stop form submission if email is invalid
-        // }
-        checkEmail($('#email9'), 'error-text9')
-    });
-
-    $('#email9').on('input', function() {
-        checkEmail($(this), 'error-text9'); // Re-check on input change
-    });
-});
-
 </script>
 
 <script>
     $(document).ready(function() {
         $('#submit-btn').click(function(){
-            $('.hero-form-40').css({'margin-top':'12px'})
-        })
+            // $('.hero-form-40').css({'margin-top':'12px'});
+        });
     
-    let state1 = { clickCount: 0, animationDone: false };
-    let state2 = { clickCount: 0, animationDone: false };
-    let state3 = { clickCount: 0, animationDone: false };
-    let state4 = { clickCount: 0, animationDone: false };
-    let state5 = { clickCount: 0, animationDone: false };
-    let state6 = { clickCount: 0, animationDone: false };
-    let state7 = { clickCount: 0, animationDone: false };
-    let state8 = { clickCount: 0, animationDone: false };
+        let state1 = { clickCount: 0, animationDone: false };
+        let state2 = { clickCount: 0, animationDone: false };
+        let state3 = { clickCount: 0, animationDone: false };
+        let state4 = { clickCount: 0, animationDone: false };
+        let state5 = { clickCount: 0, animationDone: false };
+        let state6 = { clickCount: 0, animationDone: false };
+        let state7 = { clickCount: 0, animationDone: false };
+        let state8 = { clickCount: 0, animationDone: false };
+        let state9 = { clickCount: 0, animationDone: false };
 
-    function animateEmailField(btn, heading, emailField, errorText, state) {
-        if (state.clickCount === 0 && !state.animationDone) {
-            // First click: hide error, show and animate form
-            errorText.hide();
-            emailField.css('display', 'block');
-            heading.css('display', 'block');
+        function animateEmailField(btn, heading, emailField, errorText, state) {
+            if (state.clickCount === 0 && !state.animationDone) {
+                errorText.hide();
+                emailField.css('display', 'block');
+                heading.css('display', 'block');
 
-            setTimeout(() => {
-                emailField.css({ 'opacity': '1', 'transform': 'translateY(0)' });
-                heading.css({ 'opacity': '1', 'transform': 'translateY(0)' });
-            }, 50);
+                setTimeout(() => {
+                    emailField.css({ 'opacity': '1', 'transform': 'translateY(0)' });
+                    heading.css({ 'opacity': '1', 'transform': 'translateY(0)' });
+                }, 50);
 
-            if (window.innerWidth <= 768) {
-                btn.addClass('move-down');
-            } else {
-                btn.addClass('move-right');
+                if (window.innerWidth <= 768) {
+                    btn.addClass('move-down');
+                } else {
+                    btn.addClass('move-right');
+                }
+
+                state.animationDone = true;
             }
 
-            state.animationDone = true;
+            state.clickCount++;
         }
 
-        state.clickCount++;
-    }
-
-    $('#submit-btn').click(function() {
-        animateEmailField($(this), $("#form-heading"), $('#email'), $('#error-text'), state1);
+        $('#submit-btn').click(function() {
+            animateEmailField($(this), $("#form-heading"), $('#email'), $('#error-text'), state1);
+        });
+        $('#submit-btn3').click(function() {
+            animateEmailField($(this), $("#form-heading3"), $('#email3'), $('#error-text3'), state2);
+        });
+        $('#submit-btn4').click(function() {
+            animateEmailField($(this), $("#form-heading4"), $('#email4'), $('#error-text4'), state3);
+        });
+        $('#submit-btn5').click(function() {
+            animateEmailField($(this), $("#form-heading5"), $('#email5'), $('#error-text5'), state4);
+        });
+        $('#submit-btn6').click(function() {
+            animateEmailField($(this), $("#form-heading6"), $('#email6'), $('#error-text6'), state5);
+        });
+        $('#submit-btn7').click(function() {
+            animateEmailField($(this), $("#form-heading7"), $('#email7'), $('#error-text7'), state6);
+        });
+        $('#submit-btn8').click(function() {
+            animateEmailField($(this), $("#form-heading8"), $('#email8'), $('#error-text8'), state7);
+        });
+        $('#submit-btn9').click(function() {
+            animateEmailField($(this), $("#form-heading9"), $('#email9'), $('#error-text9'), state8);
+        });
+        $('#submit-btn10').click(function() {
+            animateEmailField($(this), $("#form-heading10"), $('#email10'), $('#error-text10'), state9);
+        });
     });
-    $('#submit-btn3').click(function() {
-        animateEmailField($(this), $("#form-heading3"), $('#email3'), $('#error-text3'), state2);
-    });
-    $('#submit-btn4').click(function() {
-        animateEmailField($(this), $("#form-heading4"), $('#email4'), $('#error-text4'), state3);
-    });
-    $('#submit-btn5').click(function() {
-        animateEmailField($(this), $("#form-heading5"), $('#email5'), $('#error-text5'), state4);
-    });
-    $('#submit-btn6').click(function() {
-        animateEmailField($(this), $("#form-heading6"), $('#email6'), $('#error-text6'), state5);
-    });
-    $('#submit-btn7').click(function() {
-        animateEmailField($(this), $("#form-heading7"), $('#email7'), $('#error-text7'), state6);
-    });
-    $('#submit-btn8').click(function() {
-        animateEmailField($(this), $("#form-heading8"), $('#email8'), $('#error-text8'), state7);
-    });
-    $('#submit-btn9').click(function() {
-        animateEmailField($(this), $("#form-heading9"), $('#email9'), $('#error-text9'), state8);
-    });
-});
 </script>
-
-
 
 <script>
     async function sendToZapier(email){
@@ -3098,93 +3547,216 @@
         }).then(response => response.ok)
         .catch(error => console.error("Error sending data to Zapier:", error));
         }
-        return
+        return;
     }
 
-
-  function sendToHubSpot(data) {
-    return fetch("https://api.hsforms.com/submissions/v3/integration/submit/44821820/ff0ad92b-9d75-4ab0-948d-86af7253e369", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ fields: data.fields, context: data.context })
-    })
-    .then(response => response.ok)
-    .catch(error => console.error("Error sending data to HubSpot:", error));
-  }
+    function sendToHubSpot(data) {
+        return fetch("https://api.hsforms.com/submissions/v3/integration/submit/44821820/ff0ad92b-9d75-4ab0-948d-86af7253e369", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ fields: data.fields, context: data.context })
+        })
+        .then(response => response.ok)
+        .catch(error => console.error("Error sending data to HubSpot:", error));
+    }
   
-  function getUTMParams() { 
-    const urlParams = new URLSearchParams(window.location.search); 
-    let utmData = {}; 
-    for (let [key, value] of urlParams.entries()) { 
-      if (key.startsWith("utm_")) { 
-      utmData[key] = value; 
-      } 
-    } 
-    return utmData; 
-  }
+    function getUTMParams() { 
+        const urlParams = new URLSearchParams(window.location.search); 
+        let utmData = {}; 
+        for (let [key, value] of urlParams.entries()) { 
+            if (key.startsWith("utm_")) { 
+                utmData[key] = value; 
+            } 
+        } 
+        return utmData; 
+    }
   
-  const utmParams = getUTMParams();
+    const utmParams = getUTMParams();
 
-  function handleFormSubmission(formId) {
-  const form = document.querySelector(`#${formId}`);
-  if (!form) return;
+    function handleFormSubmission(formId) {
+        const form = document.querySelector(`#${formId}`);
+        if (!form) return;
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
 
-    Object.entries(utmParams).forEach(([key, value]) => {
-      let utmField = form.querySelector(`input[name='${key}']`);
-      if (!utmField) {
-        utmField = document.createElement("input");
-        utmField.type = "hidden";
-        utmField.name = key;
-        form.appendChild(utmField);
-      }
-      utmField.value = value;
-    });
+            Object.entries(utmParams).forEach(([key, value]) => {
+                let utmField = form.querySelector(`input[name='${key}']`);
+                if (!utmField) {
+                    utmField = document.createElement("input");
+                    utmField.type = "hidden";
+                    utmField.name = key;
+                    form.appendChild(utmField);
+                }
+                utmField.value = value;
+            });
 
-    const formData = new FormData(form);
-    const fields = [];
-    formData.forEach((value, key) => {
-      fields.push({ objectTypeId: "0-1", name: key, value: value });
-    });
+            const formData = new FormData(form);
+            const fields = [];
+            formData.forEach((value, key) => {
+                fields.push({ objectTypeId: "0-1", name: key, value: value });
+            });
 
-    const context = {
-      hutk: document.cookie.split('; ').find(row => row.startsWith('hubspotutk='))?.split('=')[1] || "",
-      pageUri: window.location.href,
-      pageName: document.title,
-    };
+            const context = {
+                hutk: document.cookie.split('; ').find(row => row.startsWith('hubspotutk='))?.split('=')[1] || "",
+                pageUri: window.location.href,
+                pageName: document.title,
+            };
 
+            sendToZapier(formData.get('email'));
+            sendToHubSpot({ fields, context }).then(success => {
+                const thankYouMessage = form.closest("div").querySelector(".thankYou");
+                if (success) {
+                    thankYouMessage.innerHTML = "Thank you! Your details have been submitted.";
+                    thankYouMessage.style.color = "#785dfb";
+                    form.style.display = "none";
+                    if(!gmail){
+                        document.querySelector("#divpopup").style.display = "flex";
+                    }
+                }
+                thankYouMessage.style.display = "block";
+                if (form.id === "email-form-10") {
+                    setTimeout(() => {
+                        thankYouMessage.style.display = "none";
+                        document.querySelectorAll(".nav1 > a").forEach(el => el.style.display = "inline-block");
+                    }, 5000);
+                }
+            });
+        });
+    }
 
-    sendToZapier(formData.get('email'))
-    sendToHubSpot({ fields, context }).then(success => {
-      const thankYouMessage = form.closest("div").querySelector(".thankYou");
-      if (success) {
-        thankYouMessage.innerHTML = "Thank you! Your details have been submitted.";
-        thankYouMessage.style.color = "#785dfb";
-        form.style.display = "none";
-        if(!gmail){
-            document.querySelector("#divpopup").style.display = "flex";
+    handleFormSubmission("email-form-2");
+    handleFormSubmission("email-form-3");
+    handleFormSubmission("email-form-4");
+    handleFormSubmission("email-form-5");
+    handleFormSubmission("email-form-6");
+    handleFormSubmission("email-form-7");
+    handleFormSubmission("email-form-8");
+    handleFormSubmission("email-form-9");
+    handleFormSubmission("email-form-10");
+
+    let state1 = { clickCount: 0, animationDone: false };
+    let state2 = { clickCount: 0, animationDone: false };
+    let state3 = { clickCount: 0, animationDone: false };
+    let state4 = { clickCount: 0, animationDone: false };
+    let state5 = { clickCount: 0, animationDone: false };
+    let state6 = { clickCount: 0, animationDone: false };
+    let state7 = { clickCount: 0, animationDone: false };
+    let state8 = { clickCount: 0, animationDone: false };
+    let state9 = { clickCount: 0, animationDone: false };
+
+    $(document).ready(function() {
+        let inactivityTimers = {};
+        let openInput = null;
+
+        function closeInput(cfg) {
+            const input = $(`#${cfg.input}`);
+            const heading = $(cfg.wrap);
+            const btn = $(cfg.btn);
+            const errorText = $(cfg.error);
+
+            // Hide input, heading, AND error text smoothly
+            input.css({ opacity: "0", transform: "translateY(10px)" });
+            heading.css({ opacity: "0", transform: "translateY(10px)" });
+            errorText.hide();
+
+            setTimeout(() => {
+                input.hide();
+                heading.hide();
+                btn.removeClass("move-down move-right");
+
+                // Reset state
+                if (openInput === cfg.input) openInput = null;
+                cfg.state.clickCount = 0;
+                cfg.state.animationDone = false;
+
+                // --- NAV CTA SPECIFIC AUTO-CLOSE ---
+                if (cfg.input === "email10") {
+                    $("#nav-email-close").trigger("click");
+                }
+
+            }, 300);
+
+            // Clear timer
+            if (inactivityTimers[cfg.input]) clearTimeout(inactivityTimers[cfg.input]);
         }
-      }
-      thankYouMessage.style.display = "block";
+
+        function startInactivityTimer(cfg) {
+            if (inactivityTimers[cfg.input]) clearTimeout(inactivityTimers[cfg.input]);
+
+            inactivityTimers[cfg.input] = setTimeout(() => {
+                closeInput(cfg);
+            }, 10000);
+        }
+
+        const formConfigs = [
+            { btn: "#submit-btn",  input: "email",   wrap: "#form-heading", error: "#error-text", state: state1 },
+            { btn: "#submit-btn3", input: "email3",  wrap: "#form-heading3", error: "#error-text3", state: state2 },
+            { btn: "#submit-btn4", input: "email4",  wrap: "#form-heading4", error: "#error-text4", state: state3 },
+            { btn: "#submit-btn5", input: "email5",  wrap: "#form-heading5", error: "#error-text5", state: state4 },
+            { btn: "#submit-btn6", input: "email6",  wrap: "#form-heading6", error: "#error-text6", state: state5 },
+            { btn: "#submit-btn7", input: "email7",  wrap: "#form-heading7", error: "#error-text7", state: state6 },
+            { btn: "#submit-btn8", input: "email8",  wrap: "#form-heading8", error: "#error-text8", state: state7 },
+            { btn: "#submit-btn9", input: "email9",  wrap: "#form-heading9", error: "#error-text9", state: state8 },
+            { btn: "#submit-btn10",input: "email10", wrap: "#form-heading10", error: "#error-text10", state: state9 },
+        ];
+
+        formConfigs.forEach(function(cfg){
+            // Button click: open input
+            $(cfg.btn).on("click", function(){
+                // Close previous open input
+                if (openInput && openInput !== cfg.input) {
+                    let oldCfg = formConfigs.find(f => f.input === openInput);
+                    if (oldCfg) closeInput(oldCfg);
+                }
+
+                // Show input if not already visible
+                const input = $(`#${cfg.input}`);
+                const heading = $(cfg.wrap);
+                const errorText = $(cfg.error);
+
+                if (!cfg.state.animationDone) {
+                    input.show();
+                    heading.show();
+                    errorText.hide(); // Ensure error text is hidden when opening
+                    
+                    setTimeout(() => {
+                        input.css({ opacity: "1", transform: "translateY(0)" });
+                        heading.css({ opacity: "1", transform: "translateY(0)" });
+                    }, 50);
+
+                    if (window.innerWidth <= 768) {
+                        $(cfg.btn).addClass("move-down");
+                    } else {
+                        $(cfg.btn).addClass("move-right");
+                    }
+
+                    cfg.state.animationDone = true;
+                    cfg.state.clickCount = 1;
+                }
+
+                openInput = cfg.input;
+                startInactivityTimer(cfg);
+            });
+
+            // Restart timer on typing
+            $(`#${cfg.input}`).on("input", function(){
+                startInactivityTimer(cfg);
+            });
+
+            // Start timer when blurred (only if input has content)
+            $(`#${cfg.input}`).on("blur", function(){
+                if ($(this).val().trim() === "") {
+                    startInactivityTimer(cfg);
+                }
+            });
+        });
+           $('#nav-email-close').click(function() {
+              // Hide the error text for nav CTA
+             $('#error-text10').hide();
+           });
     });
-  });
-}
-
-// Example usage
-handleFormSubmission("email-form-2");
-handleFormSubmission("email-form-3");
-handleFormSubmission("email-form-4");
-handleFormSubmission("email-form-5");
-handleFormSubmission("email-form-6");
-handleFormSubmission("email-form-7");
-handleFormSubmission("email-form-8");
-handleFormSubmission("email-form-9");
-
 </script>
-
-
 
 
 <!-- Start of HubSpot Embed Code -->
@@ -3192,5 +3764,4 @@ handleFormSubmission("email-form-9");
 <!-- End of HubSpot Embed Code -->
 
 </body>
-
 </html>
