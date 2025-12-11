@@ -3351,7 +3351,8 @@
     $(document).ready(function() {
         function checkEmail(emailField, errorTextId) {   
             var email = emailField.val().trim();
-            var reg = /^[\w-.]+@(?!gmail\.com$|gmail.co$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
+            // var reg = /^[\w-.]+@(?!gmail\.com$|gmail.co$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
+            var reg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
 
             var errorText = $('#' + errorTextId);
 
