@@ -3346,23 +3346,38 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    let gmail = false;
+    // Personal email providers — we still allow submissions, but skip Calendly.
+    const freeEmailPatterns = [
+        /gmail\./i, /googlemail\.com/i,
+        /yahoo\./i, /ymail\.com/i,
+        /hotmail\./i, /outlook\./i, /live\./i, /msn\.com/i,
+        /aol\.com/i, /rediffmail\.com/i,
+        /protonmail\.com/i, /proton\.me/i,
+        /icloud\.com/i, /me\.com/i, /mac\.com/i,
+        /gmx\./i, /mail\.com/i, /zoho\.com/i
+    ];
+    // Tracks whether the last validated email looked personal
+    let isPersonalEmail = false;
+
+    function isPersonalEmailAddress(email) {
+        const domain = email.split("@")[1]?.toLowerCase() || "";
+        return freeEmailPatterns.some((re) => re.test(domain));
+    }
     
     $(document).ready(function() {
         function checkEmail(emailField, errorTextId) {   
             var email = emailField.val().trim();
-            // var reg = /^[\w-.]+@(?!gmail\.com$|gmail.co$|yahoo\.com$|hotmail\.com$|yahoo\.co\.in$|aol\.com$|abc\.com$|xyz\.com$|pqr\.com$|rediffmail\.com$|live\.com$|outlook\.com$|me\.com$|msn\.com$|ymail\.com$)[\w-]+(?:\.[\w-]+)*\.[a-z]{2,}$/i;
             var reg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
 
             var errorText = $('#' + errorTextId);
 
             if (reg.test(email)) {
                 errorText.hide(); 
-                gmail = false;
+                isPersonalEmail = isPersonalEmailAddress(email);
                 return true;  
             } else {
                 errorText.show();
-                gmail = true;
+                isPersonalEmail = false;
                 return false;
             }
         }
@@ -3599,6 +3614,8 @@
             formData.forEach((value, key) => {
                 fields.push({ objectTypeId: "0-1", name: key, value: value });
             });
+            const emailValue = formData.get('email') || "";
+            const isPersonal = isPersonalEmailAddress(emailValue);
 
             const context = {
                 hutk: document.cookie.split('; ').find(row => row.startsWith('hubspotutk='))?.split('=')[1] || "",
@@ -3606,14 +3623,15 @@
                 pageName: document.title,
             };
 
-            sendToZapier(formData.get('email'));
+            sendToZapier(emailValue);
             sendToHubSpot({ fields, context }).then(success => {
                 const thankYouMessage = form.closest("div").querySelector(".thankYou");
                 if (success) {
                     thankYouMessage.innerHTML = "Thank you! Your details have been submitted.";
                     thankYouMessage.style.color = "#785dfb";
                     form.style.display = "none";
-                    if(!gmail){
+                    // Only open Calendly for business emails
+                    if(!isPersonal){
                         document.querySelector("#divpopup").style.display = "flex";
                     }
                 }
