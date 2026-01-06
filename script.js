@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 interval = setInterval(function () {
                     count++;
                     counter1.textContent = count + "+";
-                    if (count >= 14) clearInterval(interval);
+                    if (count >= 15) clearInterval(interval);
                 }, 100);
                 observer1.disconnect();
             }
