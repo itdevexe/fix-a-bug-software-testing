@@ -3591,6 +3591,15 @@
   
     const utmParams = getUTMParams();
 
+    function getUtmDevice() {
+        const w = window.innerWidth;
+        if (w <= 767) return "mobile";
+        if (w <= 1024) return "tablet";
+        return "desktop";
+    }
+
+
+
     function handleFormSubmission(formId) {
         const form = document.querySelector(`#${formId}`);
         if (!form) return;
@@ -3614,6 +3623,13 @@
             formData.forEach((value, key) => {
                 fields.push({ objectTypeId: "0-1", name: key, value: value });
             });
+            // ✅ ADD utm_device for HubSpot (no hidden input)
+            fields.push({
+                objectTypeId: "0-1",
+                name: "utm_device", // HubSpot internal name
+                value: getUtmDevice()
+            });
+
             const emailValue = formData.get('email') || "";
             const isPersonal = isPersonalEmailAddress(emailValue);
 
